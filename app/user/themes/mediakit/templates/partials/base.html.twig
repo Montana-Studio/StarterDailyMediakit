@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+{% set theme_config = attribute(config.themes, config.system.pages.theme) %}
+
+{% block head %}
+    <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
+    {% include 'partials/metadata.html.twig' %}
+    <link rel="icon" type="image/png" href="{{ url('theme://images/favicon.ico', true) }}" />
+    <link rel="canonical" href="{{ page.url(true, true) }}" />
+
+    {% block stylesheets %}
+        {% do assets.addCss('theme://css/pure-0.5.0/grids-min.css') %}
+
+        {% if browser.getBrowser == 'msie' and browser.getVersion == 10 %}
+            {% do assets.addCss('theme://css/nucleus-ie10.css') %}
+        {% endif %}
+        {% if browser.getBrowser == 'msie' and browser.getVersion >= 8 and browser.getVersion <= 9 %}
+            {% do assets.addCss('theme://css/nucleus-ie9.css') %}
+            {% do assets.addJs('theme://js/html5shiv-printshiv.min.js') %}
+        {% endif %}
+    {% endblock %}
+    {{ assets.css() }}
+
+{% endblock head%}
+</head>
+<body class="{{ page.header.body_classes }}">
+    {% block header %}
+    <header id="header">
+
+        <div class="logo">
+            <h1>
+              <a href="{{ base_url == '' ? '/' : base_url }}">
+                {{ config.site.title }}
+              </a>
+            </h1>
+        </div>
+
+        <div class="navbar">
+
+            {% block header_extra %}{% endblock %}
+
+            {% block header_navigation %}
+              {% include 'partials/navigation.html.twig' %}
+            {% endblock %}
+
+        </div>
+
+    </header>
+    {% endblock %}
+
+    {% block showcase %}{% endblock %}
+
+    {% block body %}
+    <section class="{{ class }}">
+        {% block content %}{% endblock %}
+    </section>
+    {% endblock %}
+
+    {% block footer %}
+      <footer class="footer"></footer>
+    {% endblock %}
+
+    <aside class="sidebar">
+        {% include 'partials/navigation.html.twig' %}
+    </aside>
+    {% block bottom %}
+      {% block javascripts %}
+          {% do assets.addJs('jquery',101) %}
+          {% do assets.addJs('theme://js/modernizr.custom.71422.js',100) %}
+      {% endblock %}
+      {{ assets.js() }}
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "starterdaily-mediakit",
+  "title": "Starterdaily Mediakit",
+  "description": "MediaKit para StarterDaily",
+  "version": "0.1.0",
+  "homepage": "http://www.starterdaily-mediakit.com/",
+  "author": {
+    "name": "Montana Studio",
+    "email": "mauro@montana-studio.com",
+    "url": "http://www.montana-studio.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Mediatrends/starterdaily-mediakit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Mediatrends/starterdaily-mediakit/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.starterdaily-mediakit.com//blob/master/LICENSE-MIT"
+    }
+  ],
+  "keywords": []
+}
