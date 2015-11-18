@@ -26,44 +26,40 @@
 </head>
 <body class="{{ page.header.body_classes }}">
     {% block header %}
-    <header id="header">
+      <header id="header">
 
-        <div class="logo">
-            <h1>
-              <a href="{{ base_url == '' ? '/' : base_url }}">
-                {{ config.site.title }}
-              </a>
-            </h1>
-        </div>
+          <div class="logo">
+              <h1>
+                <a href="{{ base_url == '' ? '/' : base_url }}">
+                  {{ config.site.title }}
+                </a>
+              </h1>
+          </div>
 
-        <div class="navbar">
-
-            {% block header_extra %}{% endblock %}
-
-            {% block header_navigation %}
+          <div id="navbar">
+              {% block header_extra %}{% endblock %}
+              {% if config.plugins.langswitcher.enabled %}
+              {% include 'partials/langswitcher.html.twig' %}
+              {% endif %}
+              {% block header_navigation %}
               {% include 'partials/navigation.html.twig' %}
-            {% endblock %}
+              {% endblock %}
+              <span class="panel-activation sb-toggle-left navbar-left menu-btn fa fa-bars"></span>
+          </div>
 
-        </div>
-
-    </header>
+      </header>
     {% endblock %}
 
-    {% block showcase %}{% endblock %}
-
     {% block body %}
-    <section class="{{ class }}">
-        {% block content %}{% endblock %}
-    </section>
+      <section class="{{ class }}">
+          {% block content %}{% endblock %}
+      </section>
     {% endblock %}
 
     {% block footer %}
       <footer class="footer"></footer>
     {% endblock %}
 
-    <aside class="sidebar">
-        {% include 'partials/navigation.html.twig' %}
-    </aside>
     {% block bottom %}
       {% block javascripts %}
           {% do assets.addJs('jquery',101) %}

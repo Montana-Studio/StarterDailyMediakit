@@ -15,7 +15,6 @@ class __TwigTemplate_1b79d03a5e2e74f70380a1ba53f525228d3cfe9bd5cc68321ae0ca0bc3a
             'header' => array($this, 'block_header'),
             'header_extra' => array($this, 'block_header_extra'),
             'header_navigation' => array($this, 'block_header_navigation'),
-            'showcase' => array($this, 'block_showcase'),
             'body' => array($this, 'block_body'),
             'content' => array($this, 'block_content'),
             'footer' => array($this, 'block_footer'),
@@ -47,33 +46,22 @@ class __TwigTemplate_1b79d03a5e2e74f70380a1ba53f525228d3cfe9bd5cc68321ae0ca0bc3a
     ";
         // line 28
         $this->displayBlock('header', $context, $blocks);
-        // line 51
-        echo "
-    ";
         // line 52
-        $this->displayBlock('showcase', $context, $blocks);
+        echo "
+    ";
         // line 53
-        echo "
-    ";
-        // line 54
         $this->displayBlock('body', $context, $blocks);
+        // line 58
+        echo "
+    ";
         // line 59
-        echo "
-    ";
-        // line 60
         $this->displayBlock('footer', $context, $blocks);
-        // line 63
+        // line 62
         echo "
-    <aside class=\"sidebar\">
-        ";
-        // line 65
-        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 65)->display($context);
-        // line 66
-        echo "    </aside>
     ";
-        // line 67
+        // line 63
         $this->displayBlock('bottom', $context, $blocks);
-        // line 74
+        // line 70
         echo "</body>
 </html>
 ";
@@ -150,111 +138,112 @@ class __TwigTemplate_1b79d03a5e2e74f70380a1ba53f525228d3cfe9bd5cc68321ae0ca0bc3a
     public function block_header($context, array $blocks = array())
     {
         // line 29
-        echo "    <header id=\"header\">
+        echo "      <header id=\"header\">
 
-        <div class=\"logo\">
-            <h1>
-              <a href=\"";
+          <div class=\"logo\">
+              <h1>
+                <a href=\"";
         // line 33
         echo ((((isset($context["base_url"]) ? $context["base_url"] : null) == "")) ? ("/") : ((isset($context["base_url"]) ? $context["base_url"] : null)));
         echo "\">
-                ";
+                  ";
         // line 34
         echo $this->getAttribute($this->getAttribute((isset($context["config"]) ? $context["config"] : null), "site", array()), "title", array());
         echo "
-              </a>
-            </h1>
-        </div>
+                </a>
+              </h1>
+          </div>
 
-        <div class=\"navbar\">
-
-            ";
-        // line 41
+          <div id=\"navbar\">
+              ";
+        // line 40
         $this->displayBlock('header_extra', $context, $blocks);
-        // line 42
-        echo "
-            ";
-        // line 43
+        // line 41
+        echo "              ";
+        if ($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["config"]) ? $context["config"] : null), "plugins", array()), "langswitcher", array()), "enabled", array())) {
+            // line 42
+            echo "              ";
+            $this->loadTemplate("partials/langswitcher.html.twig", "partials/base.html.twig", 42)->display($context);
+            // line 43
+            echo "              ";
+        }
+        // line 44
+        echo "              ";
         $this->displayBlock('header_navigation', $context, $blocks);
-        // line 46
-        echo "
-        </div>
+        // line 47
+        echo "              <span class=\"panel-activation sb-toggle-left navbar-left menu-btn fa fa-bars\"></span>
+          </div>
 
-    </header>
+      </header>
     ";
     }
 
-    // line 41
+    // line 40
     public function block_header_extra($context, array $blocks = array())
     {
     }
 
-    // line 43
+    // line 44
     public function block_header_navigation($context, array $blocks = array())
     {
-        // line 44
-        echo "              ";
-        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 44)->display($context);
         // line 45
-        echo "            ";
+        echo "              ";
+        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 45)->display($context);
+        // line 46
+        echo "              ";
     }
 
-    // line 52
-    public function block_showcase($context, array $blocks = array())
-    {
-    }
-
-    // line 54
+    // line 53
     public function block_body($context, array $blocks = array())
     {
-        // line 55
-        echo "    <section class=\"";
+        // line 54
+        echo "      <section class=\"";
         echo (isset($context["class"]) ? $context["class"] : null);
         echo "\">
-        ";
-        // line 56
+          ";
+        // line 55
         $this->displayBlock('content', $context, $blocks);
-        // line 57
-        echo "    </section>
+        // line 56
+        echo "      </section>
     ";
     }
 
-    // line 56
+    // line 55
     public function block_content($context, array $blocks = array())
     {
     }
 
-    // line 60
+    // line 59
     public function block_footer($context, array $blocks = array())
     {
-        // line 61
+        // line 60
         echo "      <footer class=\"footer\"></footer>
     ";
     }
 
-    // line 67
+    // line 63
     public function block_bottom($context, array $blocks = array())
     {
-        // line 68
+        // line 64
         echo "      ";
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 72
+        // line 68
         echo "      ";
         echo $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "js", array(), "method");
         echo "
     ";
     }
 
-    // line 68
+    // line 64
     public function block_javascripts($context, array $blocks = array())
     {
-        // line 69
+        // line 65
         echo "          ";
         $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "jquery", 1 => 101), "method");
-        // line 70
+        // line 66
         echo "          ";
         $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/modernizr.custom.71422.js", 1 => 100), "method");
-        // line 71
+        // line 67
         echo "      ";
     }
 
@@ -270,7 +259,7 @@ class __TwigTemplate_1b79d03a5e2e74f70380a1ba53f525228d3cfe9bd5cc68321ae0ca0bc3a
 
     public function getDebugInfo()
     {
-        return array (  258 => 71,  255 => 70,  252 => 69,  249 => 68,  242 => 72,  239 => 68,  236 => 67,  231 => 61,  228 => 60,  223 => 56,  218 => 57,  216 => 56,  211 => 55,  208 => 54,  203 => 52,  199 => 45,  196 => 44,  193 => 43,  188 => 41,  180 => 46,  178 => 43,  175 => 42,  173 => 41,  163 => 34,  159 => 33,  153 => 29,  150 => 28,  146 => 22,  143 => 21,  140 => 20,  137 => 19,  134 => 18,  131 => 17,  128 => 16,  126 => 15,  123 => 14,  120 => 13,  117 => 12,  109 => 23,  107 => 12,  102 => 10,  97 => 9,  95 => 8,  86 => 7,  83 => 6,  77 => 74,  75 => 67,  72 => 66,  70 => 65,  66 => 63,  64 => 60,  61 => 59,  59 => 54,  56 => 53,  54 => 52,  51 => 51,  49 => 28,  45 => 27,  42 => 26,  40 => 6,  37 => 5,  35 => 4,  30 => 1,);
+        return array (  247 => 67,  244 => 66,  241 => 65,  238 => 64,  231 => 68,  228 => 64,  225 => 63,  220 => 60,  217 => 59,  212 => 55,  207 => 56,  205 => 55,  200 => 54,  197 => 53,  193 => 46,  190 => 45,  187 => 44,  182 => 40,  174 => 47,  171 => 44,  168 => 43,  165 => 42,  162 => 41,  160 => 40,  151 => 34,  147 => 33,  141 => 29,  138 => 28,  134 => 22,  131 => 21,  128 => 20,  125 => 19,  122 => 18,  119 => 17,  116 => 16,  114 => 15,  111 => 14,  108 => 13,  105 => 12,  97 => 23,  95 => 12,  90 => 10,  85 => 9,  83 => 8,  74 => 7,  71 => 6,  65 => 70,  63 => 63,  60 => 62,  58 => 59,  55 => 58,  53 => 53,  50 => 52,  48 => 28,  44 => 27,  41 => 26,  39 => 6,  36 => 5,  34 => 4,  29 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -301,44 +290,40 @@ class __TwigTemplate_1b79d03a5e2e74f70380a1ba53f525228d3cfe9bd5cc68321ae0ca0bc3a
 /* </head>*/
 /* <body class="{{ page.header.body_classes }}">*/
 /*     {% block header %}*/
-/*     <header id="header">*/
+/*       <header id="header">*/
 /* */
-/*         <div class="logo">*/
-/*             <h1>*/
-/*               <a href="{{ base_url == '' ? '/' : base_url }}">*/
-/*                 {{ config.site.title }}*/
-/*               </a>*/
-/*             </h1>*/
-/*         </div>*/
+/*           <div class="logo">*/
+/*               <h1>*/
+/*                 <a href="{{ base_url == '' ? '/' : base_url }}">*/
+/*                   {{ config.site.title }}*/
+/*                 </a>*/
+/*               </h1>*/
+/*           </div>*/
 /* */
-/*         <div class="navbar">*/
-/* */
-/*             {% block header_extra %}{% endblock %}*/
-/* */
-/*             {% block header_navigation %}*/
+/*           <div id="navbar">*/
+/*               {% block header_extra %}{% endblock %}*/
+/*               {% if config.plugins.langswitcher.enabled %}*/
+/*               {% include 'partials/langswitcher.html.twig' %}*/
+/*               {% endif %}*/
+/*               {% block header_navigation %}*/
 /*               {% include 'partials/navigation.html.twig' %}*/
-/*             {% endblock %}*/
+/*               {% endblock %}*/
+/*               <span class="panel-activation sb-toggle-left navbar-left menu-btn fa fa-bars"></span>*/
+/*           </div>*/
 /* */
-/*         </div>*/
-/* */
-/*     </header>*/
+/*       </header>*/
 /*     {% endblock %}*/
 /* */
-/*     {% block showcase %}{% endblock %}*/
-/* */
 /*     {% block body %}*/
-/*     <section class="{{ class }}">*/
-/*         {% block content %}{% endblock %}*/
-/*     </section>*/
+/*       <section class="{{ class }}">*/
+/*           {% block content %}{% endblock %}*/
+/*       </section>*/
 /*     {% endblock %}*/
 /* */
 /*     {% block footer %}*/
 /*       <footer class="footer"></footer>*/
 /*     {% endblock %}*/
 /* */
-/*     <aside class="sidebar">*/
-/*         {% include 'partials/navigation.html.twig' %}*/
-/*     </aside>*/
 /*     {% block bottom %}*/
 /*       {% block javascripts %}*/
 /*           {% do assets.addJs('jquery',101) %}*/

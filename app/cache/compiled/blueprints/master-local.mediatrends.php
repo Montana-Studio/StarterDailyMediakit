@@ -1,12 +1,28 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\Config',
-    'checksum' => '7ea5f02d444cbf303f0b67af27bc1702:30a5589f541e0905969044751fcc5cca',
+    'checksum' => '7ea5f02d444cbf303f0b67af27bc1702:e1abab78507aadd9c3194aa352a36460',
     'files' => [
         'user/plugins' => [
+            'plugins/admin' => [
+                'file' => 'user/plugins/admin/blueprints.yaml',
+                'modified' => 1447860120
+            ],
+            'plugins/email' => [
+                'file' => 'user/plugins/email/blueprints.yaml',
+                'modified' => 1447860115
+            ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/blueprints.yaml',
                 'modified' => 1447793040
+            ],
+            'plugins/form' => [
+                'file' => 'user/plugins/form/blueprints.yaml',
+                'modified' => 1447860112
+            ],
+            'plugins/login' => [
+                'file' => 'user/plugins/login/blueprints.yaml',
+                'modified' => 1447860116
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/blueprints.yaml',
@@ -38,6 +54,320 @@ return [
                 'type' => '_parent',
                 'name' => 'plugins'
             ],
+            'plugins.admin' => [
+                'type' => '_parent',
+                'name' => 'plugins.admin'
+            ],
+            'plugins.admin.Basics' => [
+                'type' => 'section',
+                'title' => 'Basics',
+                'underline' => false,
+                'name' => 'plugins.admin.Basics'
+            ],
+            'plugins.admin.enabled' => [
+                'type' => 'hidden',
+                'label' => 'Plugin status',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.admin.enabled'
+            ],
+            'plugins.admin.route' => [
+                'type' => 'text',
+                'label' => 'Administrator path',
+                'size' => 'medium',
+                'placeholder' => 'Default route for administrator (relative to base)',
+                'help' => 'If you want to change the URL for the administrator, you can provide a path here',
+                'name' => 'plugins.admin.route'
+            ],
+            'plugins.admin.theme' => [
+                'type' => 'hidden',
+                'label' => 'Theme',
+                'default' => 'grav',
+                'name' => 'plugins.admin.theme'
+            ],
+            'plugins.admin.edit_mode' => [
+                'type' => 'select',
+                'label' => 'Edit mode',
+                'size' => 'small',
+                'default' => 'normal',
+                'options' => [
+                    'normal' => 'Normal',
+                    'expert' => 'Expert'
+                ],
+                'help' => 'Auto will use blueprint if available, if none found, it will use "Expert" mode.',
+                'name' => 'plugins.admin.edit_mode'
+            ],
+            'plugins.admin.google_fonts' => [
+                'type' => 'toggle',
+                'label' => 'Use Google Fonts',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'help' => 'Use Google custom fonts.  Disable this to use Helvetica. Useful when using Cyrillic and other languages with unsupported characters.',
+                'name' => 'plugins.admin.google_fonts'
+            ],
+            'plugins.admin.show_beta_msg' => [
+                'type' => 'toggle',
+                'label' => 'Show Beta Message',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'help' => 'Show the beta warning message on the dashboard',
+                'name' => 'plugins.admin.show_beta_msg'
+            ],
+            'plugins.admin.enable_auto_updates_check' => [
+                'type' => 'toggle',
+                'label' => 'Automatically check for updates',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'help' => 'Shows an informative message, in the admin panel, when an update is available.',
+                'name' => 'plugins.admin.enable_auto_updates_check'
+            ],
+            'plugins.admin.session' => [
+                'type' => '_parent',
+                'name' => 'plugins.admin.session'
+            ],
+            'plugins.admin.session.timeout' => [
+                'type' => 'text',
+                'size' => 'small',
+                'label' => 'Session Timeout',
+                'help' => 'Sets the session timeout in seconds',
+                'validate' => [
+                    'type' => 'number',
+                    'min' => 1
+                ],
+                'name' => 'plugins.admin.session.timeout'
+            ],
+            'plugins.admin.warnings' => [
+                'type' => '_parent',
+                'name' => 'plugins.admin.warnings'
+            ],
+            'plugins.admin.warnings.delete_page' => [
+                'type' => 'toggle',
+                'label' => 'Warn on page delete',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'help' => 'Ask the user confirmation when deleting a page',
+                'name' => 'plugins.admin.warnings.delete_page'
+            ],
+            'plugins.admin.Popularity' => [
+                'type' => 'section',
+                'title' => 'Popularity',
+                'underline' => true,
+                'name' => 'plugins.admin.Popularity'
+            ],
+            'plugins.admin.popularity' => [
+                'type' => '_parent',
+                'name' => 'plugins.admin.popularity'
+            ],
+            'plugins.admin.popularity.enabled' => [
+                'type' => 'toggle',
+                'label' => 'Visitor tracking',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'help' => 'Enable the visitors stats collecting feature',
+                'name' => 'plugins.admin.popularity.enabled'
+            ],
+            'plugins.admin.dashboard' => [
+                'type' => '_parent',
+                'name' => 'plugins.admin.dashboard'
+            ],
+            'plugins.admin.dashboard.days_of_stats' => [
+                'type' => 'text',
+                'label' => 'Days of stats',
+                'size' => 'x-small',
+                'default' => 7,
+                'help' => 'Keep stats for the specified number of days, then drop them',
+                'validate' => [
+                    'type' => 'int'
+                ],
+                'name' => 'plugins.admin.dashboard.days_of_stats'
+            ],
+            'plugins.admin.popularity.ignore' => [
+                'type' => 'array',
+                'label' => 'Ignore',
+                'size' => 'large',
+                'help' => 'URLs to ignore',
+                'default' => [
+                    0 => '/test*',
+                    1 => '/modular'
+                ],
+                'value_only' => true,
+                'placeholder_value' => '/ignore-this-route',
+                'name' => 'plugins.admin.popularity.ignore'
+            ],
+            'plugins.admin.popularity.history' => [
+                'type' => '_parent',
+                'name' => 'plugins.admin.popularity.history'
+            ],
+            'plugins.admin.popularity.history.daily' => [
+                'type' => 'hidden',
+                'label' => 'Daily history',
+                'default' => 30,
+                'name' => 'plugins.admin.popularity.history.daily'
+            ],
+            'plugins.admin.popularity.history.monthly' => [
+                'type' => 'hidden',
+                'label' => 'Monthly history',
+                'default' => 12,
+                'name' => 'plugins.admin.popularity.history.monthly'
+            ],
+            'plugins.admin.popularity.history.visitors' => [
+                'type' => 'hidden',
+                'label' => 'Visitors history',
+                'default' => 20,
+                'name' => 'plugins.admin.popularity.history.visitors'
+            ],
+            'plugins.email' => [
+                'type' => '_parent',
+                'name' => 'plugins.email'
+            ],
+            'plugins.email.enabled' => [
+                'type' => 'hidden',
+                'label' => 'Plugin status',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.email.enabled'
+            ],
+            'plugins.email.mailer' => [
+                'type' => '_parent',
+                'name' => 'plugins.email.mailer'
+            ],
+            'plugins.email.mailer.engine' => [
+                'label' => 'Mail Engine',
+                'type' => 'hidden',
+                'name' => 'plugins.email.mailer.engine'
+            ],
+            'plugins.email.mailer.default' => [
+                'type' => 'select',
+                'label' => 'Mailer',
+                'size' => 'medium',
+                'options' => [
+                    'none' => 'Disabled',
+                    'smtp' => 'SMTP',
+                    'sendmail' => 'Sendmail',
+                    'mail' => 'PHP Mail'
+                ],
+                'name' => 'plugins.email.mailer.default'
+            ],
+            'plugins.email.from' => [
+                'type' => 'text',
+                'size' => 'medium',
+                'label' => 'Email from',
+                'placeholder' => 'Default email from address',
+                'name' => 'plugins.email.from'
+            ],
+            'plugins.email.to' => [
+                'type' => 'text',
+                'size' => 'medium',
+                'label' => 'Email to',
+                'placeholder' => 'Default email to address (can also be comma separated list)',
+                'name' => 'plugins.email.to'
+            ],
+            'plugins.email.mailer.smtp' => [
+                'type' => '_parent',
+                'name' => 'plugins.email.mailer.smtp'
+            ],
+            'plugins.email.mailer.smtp.server' => [
+                'type' => 'text',
+                'size' => 'medium',
+                'label' => 'SMTP server',
+                'placeholder' => 'e.g. smtp.google.com',
+                'name' => 'plugins.email.mailer.smtp.server'
+            ],
+            'plugins.email.mailer.smtp.port' => [
+                'type' => 'text',
+                'size' => 'small',
+                'label' => 'SMTP port',
+                'placeholder' => 'Defaults to 25 (plaintext) / 587 (encrypted)',
+                'validate' => [
+                    'type' => 'number',
+                    'min' => 1,
+                    'max' => 65535
+                ],
+                'name' => 'plugins.email.mailer.smtp.port'
+            ],
+            'plugins.email.mailer.smtp.encryption' => [
+                'type' => 'select',
+                'size' => 'medium',
+                'label' => 'SMTP encryption',
+                'options' => [
+                    'none' => 'None',
+                    'ssl' => 'SSL',
+                    'ttl' => 'TTL'
+                ],
+                'name' => 'plugins.email.mailer.smtp.encryption'
+            ],
+            'plugins.email.mailer.smtp.user' => [
+                'type' => 'text',
+                'size' => 'medium',
+                'label' => 'SMTP login name',
+                'name' => 'plugins.email.mailer.smtp.user'
+            ],
+            'plugins.email.mailer.smtp.password' => [
+                'type' => 'text',
+                'size' => 'medium',
+                'label' => 'SMTP password',
+                'name' => 'plugins.email.mailer.smtp.password'
+            ],
+            'plugins.email.mailer.sendmail' => [
+                'type' => '_parent',
+                'name' => 'plugins.email.mailer.sendmail'
+            ],
+            'plugins.email.mailer.sendmail.bin' => [
+                'type' => 'text',
+                'size' => 'medium',
+                'label' => 'Path to sendmail',
+                'placeholder' => '/usr/sbin/sendmail',
+                'name' => 'plugins.email.mailer.sendmail.bin'
+            ],
             'plugins.error' => [
                 'type' => '_parent',
                 'name' => 'plugins.error'
@@ -66,6 +396,64 @@ return [
                 'label' => '404 Route',
                 'default' => '/error',
                 'name' => 'plugins.error.routes.404'
+            ],
+            'plugins.form' => [
+                'type' => '_parent',
+                'name' => 'plugins.form'
+            ],
+            'plugins.form.enabled' => [
+                'type' => 'hidden',
+                'label' => 'Plugin status',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.form.enabled'
+            ],
+            'plugins.login' => [
+                'type' => '_parent',
+                'name' => 'plugins.login'
+            ],
+            'plugins.login.enabled' => [
+                'type' => 'hidden',
+                'label' => 'Plugin status',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.login.enabled'
+            ],
+            'plugins.login.built_in_css' => [
+                'type' => 'toggle',
+                'label' => 'Use built in CSS',
+                'highlight' => 1,
+                'default' => 1,
+                'help' => 'Include the CSS provided by the admin plugin',
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.login.built_in_css'
+            ],
+            'plugins.login.route' => [
+                'type' => 'text',
+                'label' => 'Login path',
+                'help' => 'Custom route to a custom login page that your theme provides',
+                'placeholder' => '/my-custom-login',
+                'name' => 'plugins.login.route'
             ],
             'plugins.problems' => [
                 'type' => '_parent',
@@ -724,11 +1112,11 @@ return [
                 '@data-options' => '\\Grav\\Common\\Utils::dateFormats',
                 'options' => [
                     '' => 'Auto Guess or Enter Custom',
-                    'd-m-Y H:i' => 'd-m-Y H:i (e.g. 17-11-2015 17:50)',
-                    'Y-m-d H:i' => 'Y-m-d H:i (e.g. 2015-11-17 17:50)',
-                    'm/d/Y h:i a' => 'm/d/Y h:i (e.g. 11/17/2015 05:50 pm)',
-                    'H:i d-m-Y' => 'H:i d-m-Y (e.g. 17:50 17-11-2015)',
-                    'h:i a m/d/Y' => 'h:i a m/d/Y (e.g. 05:50 pm 11/17/2015)'
+                    'd-m-Y H:i' => 'd-m-Y H:i (e.g. 18-11-2015 17:19)',
+                    'Y-m-d H:i' => 'Y-m-d H:i (e.g. 2015-11-18 17:19)',
+                    'm/d/Y h:i a' => 'm/d/Y h:i (e.g. 11/18/2015 05:19 pm)',
+                    'H:i d-m-Y' => 'H:i d-m-Y (e.g. 17:19 18-11-2015)',
+                    'h:i a m/d/Y' => 'h:i a m/d/Y (e.g. 05:19 pm 11/18/2015)'
                 ],
                 'validate' => [
                     'type' => 'string'
@@ -1633,11 +2021,67 @@ return [
         ],
         'nested' => [
             'plugins' => [
+                'admin' => [
+                    'Basics' => 'plugins.admin.Basics',
+                    'enabled' => 'plugins.admin.enabled',
+                    'route' => 'plugins.admin.route',
+                    'theme' => 'plugins.admin.theme',
+                    'edit_mode' => 'plugins.admin.edit_mode',
+                    'google_fonts' => 'plugins.admin.google_fonts',
+                    'show_beta_msg' => 'plugins.admin.show_beta_msg',
+                    'enable_auto_updates_check' => 'plugins.admin.enable_auto_updates_check',
+                    'session' => [
+                        'timeout' => 'plugins.admin.session.timeout'
+                    ],
+                    'warnings' => [
+                        'delete_page' => 'plugins.admin.warnings.delete_page'
+                    ],
+                    'Popularity' => 'plugins.admin.Popularity',
+                    'popularity' => [
+                        'enabled' => 'plugins.admin.popularity.enabled',
+                        'ignore' => 'plugins.admin.popularity.ignore',
+                        'history' => [
+                            'daily' => 'plugins.admin.popularity.history.daily',
+                            'monthly' => 'plugins.admin.popularity.history.monthly',
+                            'visitors' => 'plugins.admin.popularity.history.visitors'
+                        ]
+                    ],
+                    'dashboard' => [
+                        'days_of_stats' => 'plugins.admin.dashboard.days_of_stats'
+                    ]
+                ],
+                'email' => [
+                    'enabled' => 'plugins.email.enabled',
+                    'mailer' => [
+                        'engine' => 'plugins.email.mailer.engine',
+                        'default' => 'plugins.email.mailer.default',
+                        'smtp' => [
+                            'server' => 'plugins.email.mailer.smtp.server',
+                            'port' => 'plugins.email.mailer.smtp.port',
+                            'encryption' => 'plugins.email.mailer.smtp.encryption',
+                            'user' => 'plugins.email.mailer.smtp.user',
+                            'password' => 'plugins.email.mailer.smtp.password'
+                        ],
+                        'sendmail' => [
+                            'bin' => 'plugins.email.mailer.sendmail.bin'
+                        ]
+                    ],
+                    'from' => 'plugins.email.from',
+                    'to' => 'plugins.email.to'
+                ],
                 'error' => [
                     'enabled' => 'plugins.error.enabled',
                     'routes' => [
                         404 => 'plugins.error.routes.404'
                     ]
+                ],
+                'form' => [
+                    'enabled' => 'plugins.form.enabled'
+                ],
+                'login' => [
+                    'enabled' => 'plugins.login.enabled',
+                    'built_in_css' => 'plugins.login.built_in_css',
+                    'route' => 'plugins.login.route'
                 ],
                 'problems' => [
                     'enabled' => 'plugins.problems.enabled',

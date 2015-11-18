@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\Config',
-    'timestamp' => 1447794366,
-    'checksum' => 'a19943411174010b6e2b981f36ad5aa1',
+    'timestamp' => 1447877986,
+    'checksum' => '2cfb9d4e908352d70e08f514354f1870',
     'data' => [
         'streams' => [
             'schemes' => [
@@ -128,11 +128,68 @@ return [
             ]
         ],
         'plugins' => [
+            'admin' => [
+                'enabled' => true,
+                'route' => '/admin',
+                'theme' => 'grav',
+                'dashboard' => [
+                    'days_of_stats' => 7
+                ],
+                'session' => [
+                    'timeout' => 1800
+                ],
+                'warnings' => [
+                    'delete_page' => true
+                ],
+                'edit_mode' => 'normal',
+                'show_beta_msg' => true,
+                'google_fonts' => true,
+                'enable_auto_updates_check' => true,
+                'popularity' => [
+                    'enabled' => true,
+                    'ignore' => [
+                        0 => '/test*',
+                        1 => '/modular'
+                    ],
+                    'history' => [
+                        'daily' => 30,
+                        'monthly' => 12,
+                        'visitors' => 20
+                    ]
+                ]
+            ],
+            'email' => [
+                'enabled' => true,
+                'from' => 'info@mediatrends.cl',
+                'to' => 'mauro@montana-studio.com',
+                'mailer' => [
+                    'engine' => 'mail',
+                    'smtp' => [
+                        'server' => 'localhost',
+                        'port' => 25,
+                        'encryption' => 'none',
+                        'user' => '',
+                        'password' => ''
+                    ],
+                    'sendmail' => [
+                        'bin' => '/usr/sbin/sendmail'
+                    ],
+                    'default' => 'mail'
+                ]
+            ],
             'error' => [
                 'enabled' => true,
                 'routes' => [
                     404 => '/error'
                 ]
+            ],
+            'form' => [
+                'enabled' => true
+            ],
+            'login' => [
+                'enabled' => true,
+                'built_in_css' => true,
+                'route' => false
             ],
             'problems' => [
                 'enabled' => true,

@@ -111,13 +111,16 @@ class __TwigTemplate_10ec3bfc30e67c514cff71f3321ab97c54724dcd15e3a80950da03cf5dd
         $context['_seq'] = twig_ensure_traversable($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "collection", array(), "method"));
         foreach ($context['_seq'] as $context["_key"] => $context["module"]) {
             // line 30
-            echo "        <div id=\"";
+            echo "        <article id=\"";
             echo $this->getAttribute($this, "pageLinkName", array(0 => $this->getAttribute($context["module"], "menu", array())), "method");
-            echo "\"></div>
-        ";
-            // line 31
+            echo "\">
+
+          ";
+            // line 32
             echo $this->getAttribute($context["module"], "content", array());
             echo "
+
+        </article>
     ";
         }
         $_parent = $context['_parent'];
@@ -159,7 +162,7 @@ class __TwigTemplate_10ec3bfc30e67c514cff71f3321ab97c54724dcd15e3a80950da03cf5dd
 
     public function getDebugInfo()
     {
-        return array (  129 => 4,  119 => 31,  114 => 30,  110 => 29,  105 => 28,  102 => 27,  94 => 23,  90 => 21,  79 => 17,  73 => 16,  69 => 15,  66 => 14,  61 => 13,  48 => 11,  45 => 10,  41 => 9,  38 => 8,  35 => 7,  32 => 6,  28 => 1,  26 => 3,  11 => 1,);
+        return array (  132 => 4,  120 => 32,  114 => 30,  110 => 29,  105 => 28,  102 => 27,  94 => 23,  90 => 21,  79 => 17,  73 => 16,  69 => 15,  66 => 14,  61 => 13,  48 => 11,  45 => 10,  41 => 9,  38 => 8,  35 => 7,  32 => 6,  28 => 1,  26 => 3,  11 => 1,);
     }
 }
 /* {% extends 'partials/base.html.twig' %}*/
@@ -191,8 +194,11 @@ class __TwigTemplate_10ec3bfc30e67c514cff71f3321ab97c54724dcd15e3a80950da03cf5dd
 /* {% block content %}*/
 /*     {{ page.content }}*/
 /*     {% for module in page.collection() %}*/
-/*         <div id="{{ _self.pageLinkName(module.menu) }}"></div>*/
-/*         {{ module.content }}*/
+/*         <article id="{{ _self.pageLinkName(module.menu) }}">*/
+/* */
+/*           {{ module.content }}*/
+/* */
+/*         </article>*/
 /*     {% endfor %}*/
 /* {% endblock %}*/
 /* */
