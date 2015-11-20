@@ -11,6 +11,7 @@
 
     {% block stylesheets %}
         {% do assets.addCss('theme://css/pure-0.5.0/grids-min.css') %}
+        {% do assets.addCss('theme://css/starterdaily-mediakit.css') %}
 
         {% if browser.getBrowser == 'msie' and browser.getVersion == 10 %}
             {% do assets.addCss('theme://css/nucleus-ie10.css') %}
@@ -28,15 +29,17 @@
     {% block header %}
       <header id="header">
 
-          <div class="logo">
-              <h1>
-                <a href="{{ base_url == '' ? '/' : base_url }}">
-                  {{ config.site.title }}
-                </a>
-              </h1>
-          </div>
+        <div class="content-menu">
 
-          <div id="navbar">
+            <div class="logo">
+                <h1>
+                <a href="{{ base_url == '' ? '/' : base_url }} ">
+                    <img src="{{ theme_url }}/images/logo-starterdaily-r.png"/>
+                </a>
+                </h1>
+            </div>
+
+            <div id="navbar">
               {% block header_extra %}{% endblock %}
               {% if config.plugins.langswitcher.enabled %}
               {% include 'partials/langswitcher.html.twig' %}
@@ -45,7 +48,10 @@
               {% include 'partials/navigation.html.twig' %}
               {% endblock %}
               <span class="panel-activation sb-toggle-left navbar-left menu-btn fa fa-bars"></span>
-          </div>
+            </div>
+
+        </div>     
+
 
       </header>
     {% endblock %}

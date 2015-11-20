@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\Config',
-    'timestamp' => 1447877986,
-    'checksum' => '2cfb9d4e908352d70e08f514354f1870',
+    'timestamp' => 1448052833,
+    'checksum' => '3d26bdb86eb95122477cd1504a2f0890',
     'data' => [
         'streams' => [
             'schemes' => [
@@ -177,12 +177,6 @@ return [
                     'default' => 'mail'
                 ]
             ],
-            'error' => [
-                'enabled' => true,
-                'routes' => [
-                    404 => '/error'
-                ]
-            ],
             'form' => [
                 'enabled' => true
             ],
@@ -190,10 +184,6 @@ return [
                 'enabled' => true,
                 'built_in_css' => true,
                 'route' => false
-            ],
-            'problems' => [
-                'enabled' => true,
-                'built_in_css' => true
             ]
         ],
         'media' => [
@@ -510,7 +500,7 @@ return [
                     'twig' => true
                 ],
                 'markdown' => [
-                    'extra' => false,
+                    'extra' => true,
                     'auto_line_breaks' => false,
                     'auto_url_links' => false,
                     'escape_markup' => false,
@@ -532,7 +522,7 @@ return [
                 'etag' => false,
                 'vary_accept_encoding' => false,
                 'redirect_default_route' => false,
-                'redirect_default_code' => 301,
+                'redirect_default_code' => '301',
                 'redirect_trailing_slash' => true,
                 'ignore_files' => [
                     0 => '.DS_Store'

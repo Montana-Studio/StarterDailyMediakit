@@ -1,0 +1,163 @@
+1448657634
+s:9186:"
+<form name="Contacto Mediakit StarterDaily"
+      action="/Starterdaily/htdocs/app/home/_contacto"
+      method="POST">
+        <div>
+        
+    <div class="form-field  vertical">
+                    <div class="form-label">
+                <label class="inline">
+                                                        Nombre
+                                        <span class="required">*</span>
+                                </label>
+            </div>
+            <div class="form-data"
+                                data-grav-field="text"
+                data-grav-disabled="true"
+                data-grav-default="null"
+                            >
+                                                            <div class="form-input-wrapper ">
+                            <input
+                                                                name="nombre"
+                                value=""
+                                                                    type="text"
+                                                                                                                                                                                        placeholder="Tu Nombre aquí"                                                                                                                                                                                                                        required="required"                                                                                                        
+                                />
+                        </div>
+                                                </div>
+            </div>
+    </div>
+        <div>
+        
+    <div class="form-field  vertical">
+                    <div class="form-label">
+                <label class="inline">
+                                                        Empresa
+                                        <span class="required">*</span>
+                                </label>
+            </div>
+            <div class="form-data"
+                                data-grav-field="text"
+                data-grav-disabled="true"
+                data-grav-default="null"
+                            >
+                                                            <div class="form-input-wrapper ">
+                            <input
+                                                                name="empresa"
+                                value=""
+                                                                    type="text"
+                                                                                                                                                                                        placeholder="¿Cual es nombre de la empresa?"                                                                                                                                                                                                                        required="required"                                                                                                        
+                                />
+                        </div>
+                                                </div>
+            </div>
+    </div>
+        <div>
+        
+    <div class="form-field  vertical">
+                    <div class="form-label">
+                <label class="inline">
+                                                        Marca
+                                        <span class="required">*</span>
+                                </label>
+            </div>
+            <div class="form-data"
+                                data-grav-field="text"
+                data-grav-disabled="true"
+                data-grav-default="null"
+                            >
+                                                            <div class="form-input-wrapper ">
+                            <input
+                                                                name="marca"
+                                value=""
+                                                                    type="text"
+                                                                                                                                                                                        placeholder="Marca a cotizar"                                                                                                                                                                                                                        required="required"                                                                                                        
+                                />
+                        </div>
+                                                </div>
+            </div>
+    </div>
+        <div>
+        
+    <div class="form-field  vertical">
+                    <div class="form-label">
+                <label class="inline">
+                                                        Email
+                                        <span class="required">*</span>
+                                </label>
+            </div>
+            <div class="form-data"
+                                data-grav-field="text"
+                data-grav-disabled="true"
+                data-grav-default="null"
+                            >
+                                                            <div class="form-input-wrapper ">
+                            <input
+                                                                name="email"
+                                value=""
+                                                                    type="text"
+                                                                                                                                                                                        placeholder="Tu email aquí"                                                                                                                                                                                                                        required="required"                                                                                                        
+                                />
+                        </div>
+                                                </div>
+            </div>
+    </div>
+        <div>
+        
+    <div class="form-field  vertical">
+                    <div class="form-label">
+                <label class="inline">
+                                                        Teléfono
+                                        <span class="required">*</span>
+                                </label>
+            </div>
+            <div class="form-data"
+                                data-grav-field="text"
+                data-grav-disabled="true"
+                data-grav-default="null"
+                            >
+                                                            <div class="form-input-wrapper ">
+                            <input
+                                                                name="telefono"
+                                value=""
+                                                                    type="text"
+                                                                                                                                                                                        placeholder="Número telefonico"                                                                                                                                                                                                                        required="required"                                                                                                        
+                                />
+                        </div>
+                                                </div>
+            </div>
+    </div>
+        <div>
+        
+    <div class="form-field  vertical">
+                    <div class="form-label">
+                <label class="inline">
+                                                        País
+                                        
+                                </label>
+            </div>
+            <div class="form-data"
+                    data-grav-selectize="&#x5B;&#x5D;"
+                    data-grav-field="select"
+                data-grav-disabled="true"
+                data-grav-default="null"
+                
+            >
+                                        <div class="form-select-wrapper ">
+        <select class="" name="pais"
+                                                                                                >
+                        <option  value="option1">País</option>
+                        <option  value="option2">Chile</option>
+                        <option  value="option3">USA</option>
+                    </select>
+    </div>
+                            </div>
+            </div>
+    </div>
+
+	<div class="buttons">
+		    <button class="button" type="submit">Enviar</button>
+		</div>
+</form>
+";

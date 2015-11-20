@@ -4,19 +4,22 @@ body_classes: mk-content
 menu: Content
 ---
 
-##Content
-
-<div><h3>titulo uno</h3>
-<p>texto para seccion</p>
+<div class="content-info"><h3>Vestibulum et congue magna</h3>
+<p>Estamos en la misión de fortalecer a la industria de los negocios digitales, entregando el conocimiento y herramientas necesarias para afrontar los nuevos desafíos del marketing y la tecnología.</p>
 </div>
-<div class="img-content-d" style="float:right;background-size:cover;width:300px;height:300px;background-image:url('home/_content/editar_plugin.png');"></div>
+![](imagen-bg.jpg){.content-image}
 
-###titulo dos
-texto para seccion
 
-<div class="img-content-l" style="background-size:cover;width:300px;height:300px;background-image:url('home/_content/editar_plugin_2.png');"></div>
+![](imagen-bg.jpg){.content-image .image-left} 
+<div class="content-info info-right"><h3>Vestibulum et congue magna</h3>
+<p>Estamos en la misión de fortalecer a la industria de los negocios digitales, entregando el conocimiento y herramientas necesarias para afrontar los nuevos desafíos del marketing y la tecnología. 
+</p>
+<div class="marcadores-content">
+	<mark>MARKETING</mark> <mark>PUBLICIDAD </mark> <mark>AGENCIAS</mark> <mark>MARCAS</mark> <mark>DISEÑO</mark> <mark>CREATIVOS</mark> <mark>INDUSTRIAS CREATIVAS</mark> <mark>DIGITAL</mark> <mark>TENDENCIAS DEL CONSUMIDOR</mark> <mark>TECNOLOGIA APLICADA </mark> <mark>ESTUDIOS</mark> <mark>NETWORKING</mark> <mark>EMPRENDIMIENTO</mark> <mark>INNOVACION</mark> <mark>GOBIERNO</mark> <mark>PAIS DIGITAL</mark> <mark>INTERNET DE LAS COSAS</mark> <mark>DESARROLLO PROFESIONAL</mark>
+</div>
+</div>
 
-###titulo tres
-texto para seccion
-
-<div class="img-content-d" style="background-size:cover;width:300px;height:300px;background-image:url('home/_content/editar_zona.png');"></div>
+<div class="content-info"><h3>Vestibulum et congue magna</h3>
+<p>Estamos en la misión de fortalecer a la industria de los negocios digitales, entregando el conocimiento y herramientas necesarias para afrontar los nuevos desafíos del marketing y la tecnología.</p>
+</div>
+![](imagen-bg.jpg){.content-image}

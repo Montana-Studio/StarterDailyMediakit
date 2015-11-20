@@ -2,17 +2,12 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'user/config/system.yaml',
-    'modified' => 1447877983,
+    'modified' => 1448052830,
     'data' => [
         'absolute_urls' => false,
-        'timezone' => '',
-        'default_locale' => NULL,
         'param_sep' => ':',
         'wrapped_site' => false,
         'languages' => [
-            'supported' => [
-                
-            ],
             'include_default_lang' => true,
             'translations' => true,
             'translations_fallback' => true,
@@ -33,7 +28,6 @@ return [
                 'count' => 20
             ],
             'dateformat' => [
-                'default' => NULL,
                 'short' => 'jS M Y',
                 'long' => 'F jS \\a\\t g:ia'
             ],
@@ -47,7 +41,7 @@ return [
                 'twig' => true
             ],
             'markdown' => [
-                'extra' => false,
+                'extra' => true,
                 'auto_line_breaks' => false,
                 'auto_url_links' => false,
                 'escape_markup' => false,
@@ -69,7 +63,7 @@ return [
             'etag' => false,
             'vary_accept_encoding' => false,
             'redirect_default_route' => false,
-            'redirect_default_code' => 301,
+            'redirect_default_code' => '301',
             'redirect_trailing_slash' => true,
             'ignore_files' => [
                 0 => '.DS_Store'
@@ -136,10 +130,7 @@ return [
         ],
         'media' => [
             'enable_media_timestamp' => false,
-            'upload_limit' => 0,
-            'unsupported_inline_types' => [
-                
-            ]
+            'upload_limit' => 0
         ],
         'session' => [
             'enabled' => true,

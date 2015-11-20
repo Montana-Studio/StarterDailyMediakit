@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'themes://mediakit/mediakit.yaml',
-    'modified' => 1447793759,
+    'modified' => 1448024412,
     'data' => [
         'enabled' => true,
         'dropdown' => [

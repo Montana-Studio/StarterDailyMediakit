@@ -11,8 +11,8 @@ content:
     order: asc
     custom:
       - _inicio
-      - _metric
       - _content
+      - _metric
       - _marcas
       - _specs
       - _requerimientos

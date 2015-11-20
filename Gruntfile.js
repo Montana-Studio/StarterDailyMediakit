@@ -5,7 +5,7 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('starterdaily-mediakit.json'),
 
-        www: 'app/wp-content/themes/starterdaily-mediakit',
+        www: 'app/user/themes/mediakit', 
         dist: 'prod',
         
         jsout:'js/starterdaily-mediakit.min.js',
@@ -123,16 +123,16 @@ module.exports = function(grunt) {
         },
 
         imagemin: {
-          dynamic: {
-            files: [{
-              expand: true,
-              optimizationLevel: 3,                
-              cwd: '<%= dist %>/<%= compimg %>',
-              src: ['<%= dist %>/<%= img %>'],
-              dest: '<%= dist %>/<%= compimg %>'
-            }]
-          }
-        },
+         dynamic: {
+           files: [{
+             expand: true,
+             optimizationLevel: 3,                
+             cwd: '<%= dist %>/img/',
+             src: ['<%= img %>'],
+             dest: '<%= www %>/<%= compimg %>/'
+           }]
+         }
+       },
         parallel:{
           grunt: {
             options: {

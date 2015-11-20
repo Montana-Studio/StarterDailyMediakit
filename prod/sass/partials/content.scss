@@ -1,0 +1,54 @@
+#content {
+	@include span-columns(12);
+	p {
+		width: 50%;
+		margin:0 !important;
+		float: left;
+		.content-image {
+			@include span-columns(12);
+			height: 900px;
+			margin:0;
+		}
+
+	}
+	.content-info {
+		width: 50%;
+		float: left;
+		background: $first_color;
+		height: 900px;
+		color:#fff;
+		margin:0;
+		padding:150px 80px;
+		&.info-right {
+			float: right !important;
+			background: #fff;
+			color:$first_color;
+			.marcadores-content {
+				@include span-columns(10.5);
+				line-height: 31px;
+				margin:{top:20px;}
+				mark {
+					margin:{right:5px;}
+					font:{size:em(14)};
+					background: $first_color;
+					color:#fff;
+					padding:2px 5px;
+				}
+			}
+		}
+		h3 {
+			@include span-columns(7);
+			font:{size:em(50)};
+			clear: right;
+			margin:0;
+		}
+		p {
+			@include span-columns(9);
+			clear: both;
+			margin:{top:30px !important;}
+			font:{size: em(20);weight:300;}
+    		line-height: 39px;
+		}
+	}
+	
+}

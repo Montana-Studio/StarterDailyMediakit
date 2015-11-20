@@ -1,0 +1,96 @@
+#metric {
+	@include span-columns(12);
+	padding:100px 0;
+	h2 {
+		font:{size:em(50)};
+		color:$first_color;
+		@extend .text-center;
+		margin:0;
+	}
+	p {
+		@extend .text-center;
+		@include outer-container(60%);
+		margin:{top:15px !important;}
+		font:{size: em(20);weight:300;}
+		line-height: 39px;
+	}
+	.imagen-full {
+		@include span-columns(12);
+		margin:{top:30px;bottom:60px;}
+	}
+	.full-image-sect2 {
+		@include span-columns(12);
+		height:1200px;
+		overflow: hidden;
+		position: relative;
+		margin:{bottom:50px;}
+		p {
+			width: 100%;
+			max-width: 100%;
+			margin:0 !important;
+			padding: 0;
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}	
+	.full-color-section {
+		@include span-columns(12);
+		position: absolute;
+		background: $first_color;
+		opacity: 0.9;
+		height:1200px;
+	}
+	.full-image-section {
+		@include span-columns(12);
+		padding:100px 0;
+		position: absolute;
+		h2 {
+			color:#fff;
+		}
+		p {
+			@extend .text-center;
+			@include outer-container(60%);
+			margin:{top:15px !important;}
+			font:{size: em(20);weight:300;}
+			line-height: 39px;
+			color:#fff;
+		}
+	}
+	.full-color-mapa {
+		@include span-columns(12);
+		background: $first_color;
+		p {
+			@include outer-container(60%);
+			padding: {top:30px;}
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+	.full-metrica {
+		@include span-columns(12);
+		padding:100px 0;
+		&.metrica-bg {
+			background: #fbfbfb;
+		}
+		h2 {
+			font:{size:em(50)};
+			color:$first_color;
+			@extend .text-center;
+			margin:0;
+		}
+		p {
+			@extend .text-center;
+			@include outer-container(60%);
+			margin:{top:15px !important;}
+			font:{size: em(20);weight:300;}
+			line-height: 39px;
+			img {
+				margin:{top:60px;}
+			}
+		}
+	}
+}

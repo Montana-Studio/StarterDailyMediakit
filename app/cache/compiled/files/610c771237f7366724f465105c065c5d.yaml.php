@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'system/languages/cs.yaml',
-    'modified' => 1447793004,
+    'modified' => 1448024412,
     'data' => [
         'NICETIME' => [
             'NO_DATE_PROVIDED' => 'Datum nebylo vloženo',

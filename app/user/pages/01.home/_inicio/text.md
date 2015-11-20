@@ -1,6 +1,12 @@
 ---
 title: Inicio
+body_classes: mk-home
 menu: Inicio
-body_classes: 'mk-home'
+process:
+    markdown: true
+    twig: true
 ---
-##Home
+
+![descripcion imagen](imagen-bg.jpg){.background-home}
+<div class="filtro-home"></div>
+![descripcion imagen](staterdaily_logotipe.png){.logotipe-home}
