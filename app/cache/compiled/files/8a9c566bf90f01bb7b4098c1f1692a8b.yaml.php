@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'user/plugins/admin/blueprints.yaml',
-    'modified' => 1448024412,
+    'modified' => 1448313517,
     'data' => [
         'name' => 'Admin Panel',
-        'version' => '1.0.0-rc.4',
+        'version' => '1.0.0-rc.6',
         'description' => 'Adds an advanced administration panel to manage your site',
         'icon' => 'empire',
         'author' => [

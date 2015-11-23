@@ -5,15 +5,36 @@ menu: Metric
 ---
 
 ##Vestibulum et congue 
-tempus nisl vulputate. Maecenas mattis dictum tortor ut iaculis. Duis pulvinar eros et purus fringilla facilisis. Pellentesque habitant morbi tristique 
-![](metrica_1.jpg){.imagen-full}
-![](metrica_2.jpg){.imagen-full}
+tempus nisl vulputate. Maecenas mattis dictum tortor ut iaculis. Duis pulvinar eros et purus fringilla facilisis. Pellentesque habitant morbi tristique
+<div markdown="1" class="module-one">
+<div markdown="1" class="img-metric-module"> 
+###Hendrerit porttitor diam porttitor{.title-metric}
+<div class="line-metric"></div>
+![](metrica_flujo.gif)
+</div>
+<!--
+comentario x
+-->
+<div markdown="1" class="img-metric-module">
+###Hendrerit porttitor diam porttitor{.title-metric}
+<div class="line-metric"></div>
+![](metrica_segmentacion.gif)
+</div>
+</div>
 
-<div markdown="1" class="full-color-mapa">![](metrica_mapa.png)</div>
+<div markdown="1" class="mapa-module">
+<div markdown="1" class="mapa-module-inside">
+###titulo{.title-metric}
+<div class="line-metric"></div>
+![](metrica_mapa.gif)
+</div>
+</div>
 
 ![](metrica_3.jpg){.imagen-full}
 
-<div markdown="1" class="full-image-sect2">![](imagen-bg.jpg)</div>
+<div markdown="1" class="full-image-sect2">
+![](imagen-bg.jpg)
+</div>
 <div markdown="1" class="full-color-section"></div>
 <div markdown="1" class="full-image-section">
 ##Vestibulum et congue 

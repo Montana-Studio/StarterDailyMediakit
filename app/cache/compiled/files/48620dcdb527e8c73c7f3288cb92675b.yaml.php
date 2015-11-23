@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'system/config/system.yaml',
-    'modified' => 1448024412,
+    'modified' => 1448313237,
     'data' => [
         'absolute_urls' => false,
         'timezone' => '',
@@ -60,10 +60,12 @@ return [
                 0 => 'txt',
                 1 => 'xml',
                 2 => 'html',
-                3 => 'json',
-                4 => 'rss',
-                5 => 'atom'
+                3 => 'htm',
+                4 => 'json',
+                5 => 'rss',
+                6 => 'atom'
             ],
+            'append_url_extension' => '',
             'expires' => 604800,
             'last_modified' => false,
             'etag' => false,
@@ -79,13 +81,7 @@ return [
                 1 => '.idea'
             ],
             'ignore_hidden' => true,
-            'url_taxonomy_filters' => true,
-            'fallback_types' => [
-                0 => 'png',
-                1 => 'jpg',
-                2 => 'jpeg',
-                3 => 'gif'
-            ]
+            'url_taxonomy_filters' => true
         ],
         'cache' => [
             'enabled' => true,
@@ -103,7 +99,8 @@ return [
             'auto_reload' => true,
             'autoescape' => false,
             'undefined_functions' => true,
-            'undefined_filters' => true
+            'undefined_filters' => true,
+            'umask_fix' => false
         ],
         'assets' => [
             'css_pipeline' => false,
@@ -137,15 +134,15 @@ return [
             'upload_limit' => 0,
             'unsupported_inline_types' => [
                 
+            ],
+            'allowed_fallback_types' => [
+                
             ]
         ],
         'session' => [
             'enabled' => true,
             'timeout' => 1800,
             'name' => 'grav-site'
-        ],
-        'security' => [
-            'default_hash' => '$2y$10$kwsyMVwM8/7j0K/6LHT.g.Fs49xOCTp2b8hh/S5.dPJuJcJB6T.UK'
         ]
     ]
 ];

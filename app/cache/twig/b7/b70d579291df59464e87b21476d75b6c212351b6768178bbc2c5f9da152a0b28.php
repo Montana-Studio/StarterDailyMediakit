@@ -61,7 +61,7 @@ class __TwigTemplate_adc057dbfb8b829c3f2473b5a4a5c57d31178d33789b0181d68a9eaa0b8
     ";
         // line 69
         $this->displayBlock('bottom', $context, $blocks);
-        // line 76
+        // line 77
         echo "</body>
 </html>
 ";
@@ -235,7 +235,7 @@ class __TwigTemplate_adc057dbfb8b829c3f2473b5a4a5c57d31178d33789b0181d68a9eaa0b8
         // line 70
         echo "      ";
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 74
+        // line 75
         echo "      ";
         echo $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "js", array(), "method");
         echo "
@@ -252,6 +252,9 @@ class __TwigTemplate_adc057dbfb8b829c3f2473b5a4a5c57d31178d33789b0181d68a9eaa0b8
         echo "          ";
         $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/modernizr.custom.71422.js", 1 => 100), "method");
         // line 73
+        echo "          ";
+        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/starterdaily-mediakit.min.js", 1 => 99), "method");
+        // line 74
         echo "      ";
     }
 
@@ -267,7 +270,7 @@ class __TwigTemplate_adc057dbfb8b829c3f2473b5a4a5c57d31178d33789b0181d68a9eaa0b8
 
     public function getDebugInfo()
     {
-        return array (  255 => 73,  252 => 72,  249 => 71,  246 => 70,  239 => 74,  236 => 70,  233 => 69,  228 => 66,  225 => 65,  220 => 61,  215 => 62,  213 => 61,  208 => 60,  205 => 59,  201 => 49,  198 => 48,  195 => 47,  190 => 43,  179 => 50,  176 => 47,  173 => 46,  170 => 45,  167 => 44,  165 => 43,  156 => 37,  152 => 36,  144 => 30,  141 => 29,  137 => 23,  134 => 22,  131 => 21,  128 => 20,  125 => 19,  122 => 18,  119 => 17,  117 => 16,  114 => 15,  111 => 14,  108 => 13,  105 => 12,  97 => 24,  95 => 12,  90 => 10,  85 => 9,  83 => 8,  74 => 7,  71 => 6,  65 => 76,  63 => 69,  60 => 68,  58 => 65,  55 => 64,  53 => 59,  50 => 58,  48 => 29,  44 => 28,  41 => 27,  39 => 6,  36 => 5,  34 => 4,  29 => 1,);
+        return array (  258 => 74,  255 => 73,  252 => 72,  249 => 71,  246 => 70,  239 => 75,  236 => 70,  233 => 69,  228 => 66,  225 => 65,  220 => 61,  215 => 62,  213 => 61,  208 => 60,  205 => 59,  201 => 49,  198 => 48,  195 => 47,  190 => 43,  179 => 50,  176 => 47,  173 => 46,  170 => 45,  167 => 44,  165 => 43,  156 => 37,  152 => 36,  144 => 30,  141 => 29,  137 => 23,  134 => 22,  131 => 21,  128 => 20,  125 => 19,  122 => 18,  119 => 17,  117 => 16,  114 => 15,  111 => 14,  108 => 13,  105 => 12,  97 => 24,  95 => 12,  90 => 10,  85 => 9,  83 => 8,  74 => 7,  71 => 6,  65 => 77,  63 => 69,  60 => 68,  58 => 65,  55 => 64,  53 => 59,  50 => 58,  48 => 29,  44 => 28,  41 => 27,  39 => 6,  36 => 5,  34 => 4,  29 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -342,6 +345,7 @@ class __TwigTemplate_adc057dbfb8b829c3f2473b5a4a5c57d31178d33789b0181d68a9eaa0b8
 /*       {% block javascripts %}*/
 /*           {% do assets.addJs('jquery',101) %}*/
 /*           {% do assets.addJs('theme://js/modernizr.custom.71422.js',100) %}*/
+/*           {% do assets.addJs('theme://js/starterdaily-mediakit.min.js',99) %}*/
 /*       {% endblock %}*/
 /*       {{ assets.js() }}*/
 /*     {% endblock %}*/

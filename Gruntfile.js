@@ -8,7 +8,7 @@ module.exports = function(grunt) {
         www: 'app/user/themes/mediakit', 
         dist: 'prod',
         
-        jsout:'js/starterdaily-mediakit.min.js',
+        jsout:'js/starterdaily-mediakit.min.js', 
         cssout:'css/starterdaily-mediakit.css',
         compimg:'img2/**/*.{png,jpg,gif}',
 
@@ -88,7 +88,7 @@ module.exports = function(grunt) {
             },
             compile: {
                 files: {
-                    '<%= www %>/<%= jsout %>': ['<%= js %>']
+                    '<%= www %>/<%= jsout %>': ['<%= dist %>/<%= js %>']
                 }
             }
         },
@@ -123,16 +123,16 @@ module.exports = function(grunt) {
         },
 
         imagemin: {
-         dynamic: {
-           files: [{
-             expand: true,
-             optimizationLevel: 3,                
-             cwd: '<%= dist %>/img/',
-             src: ['<%= img %>'],
-             dest: '<%= www %>/<%= compimg %>/'
-           }]
-         }
-       },
+          dynamic: {
+            files: [{
+              expand: true,
+              optimizationLevel: 3,                
+              cwd: '<%= dist %>/img/',
+              src: ['<%= img %>'],
+              dest: '<%= www %>/<%= compimg %>/'
+            }]
+          }
+        },
         parallel:{
           grunt: {
             options: {

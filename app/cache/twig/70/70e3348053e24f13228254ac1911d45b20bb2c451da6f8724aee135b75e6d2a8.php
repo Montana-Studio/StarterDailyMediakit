@@ -60,7 +60,7 @@ class __TwigTemplate_69249aba955a72bed58c1d9a4957969a5c4d8b9cc0f6675ed74a5e1fdb9
             echo "    <div>
         ";
             // line 9
-            $this->loadTemplate((((("forms/fields/" . (($this->getAttribute($context["field"], "type", array(), "any", true, true)) ? (_twig_default_filter($this->getAttribute($context["field"], "type", array()), "text")) : ("text"))) . "/") . (($this->getAttribute($context["field"], "type", array(), "any", true, true)) ? (_twig_default_filter($this->getAttribute($context["field"], "type", array()), "text")) : ("text"))) . ".html.twig"), "forms/default/form.html.twig", 9)->display($context);
+            $this->loadTemplate((((("forms/fields/" . $this->getAttribute($context["field"], "type", array())) . "/") . $this->getAttribute($context["field"], "type", array())) . ".html.twig"), "forms/default/form.html.twig", 9)->display($context);
             // line 10
             echo "    </div>
 ";
@@ -99,6 +99,11 @@ class __TwigTemplate_69249aba955a72bed58c1d9a4957969a5c4d8b9cc0f6675ed74a5e1fdb9
         $context = array_intersect_key($context, $_parent) + $_parent;
         // line 17
         echo "\t</div>
+
+  ";
+        // line 19
+        echo $this->env->getExtension('GravTwigExtension')->nonceFieldFunc("form", "form-nonce");
+        echo "
 </form>
 ";
     }
@@ -115,7 +120,7 @@ class __TwigTemplate_69249aba955a72bed58c1d9a4957969a5c4d8b9cc0f6675ed74a5e1fdb9
 
     public function getDebugInfo()
     {
-        return array (  101 => 17,  88 => 15,  84 => 14,  80 => 12,  65 => 10,  63 => 9,  60 => 8,  57 => 7,  40 => 6,  36 => 5,  32 => 4,  28 => 3,  25 => 2,  19 => 1,);
+        return array (  105 => 19,  101 => 17,  88 => 15,  84 => 14,  80 => 12,  65 => 10,  63 => 9,  60 => 8,  57 => 7,  40 => 6,  36 => 5,  32 => 4,  28 => 3,  25 => 2,  19 => 1,);
     }
 }
 /* {% if form.message %}<div class="alert">{{ form.message }}</div>{% endif %}*/
@@ -126,7 +131,7 @@ class __TwigTemplate_69249aba955a72bed58c1d9a4957969a5c4d8b9cc0f6675ed74a5e1fdb9
 /* {% for field in form.fields %}*/
 /*     {% set value = form.value(field.name) %}*/
 /*     <div>*/
-/*         {% include "forms/fields/#{field.type|default('text')}/#{field.type|default('text')}.html.twig" %}*/
+/*         {% include "forms/fields/#{field.type}/#{field.type}.html.twig" %}*/
 /*     </div>*/
 /* {% endfor %}*/
 /* */
@@ -135,5 +140,7 @@ class __TwigTemplate_69249aba955a72bed58c1d9a4957969a5c4d8b9cc0f6675ed74a5e1fdb9
 /* 	    <button class="{{ button.classes|default('button') }}" type="{{ button.type|default('submit') }}">{{ button.value|default('Submit') }}</button>*/
 /* 	{% endfor %}*/
 /* 	</div>*/
+/* */
+/*   {{ nonce_field('form', 'form-nonce') }}*/
 /* </form>*/
 /* */

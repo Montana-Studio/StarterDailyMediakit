@@ -4,6 +4,31 @@
 	overflow:hidden;
 	position: relative;
 	z-index: 1;
+	margin:0;
+	p {
+		margin:0;
+		.img-metric-module {
+			margin:{bottom:30px;}
+			.imagen-full-module {
+				display: block;
+			}
+		}
+	}
+	@include media($tabletLandTonotebook) {
+		height:768px; 
+	}
+	@include media ($notebook) {
+		height:800px; 
+	}
+	@include media($desktop) {
+		height:1000px; 
+	}
+	@include media($tablet) {
+		height:1024px; 
+    }
+    @include media($mobileTomobileLand) {
+		height:650px; 
+    }
 	.background-home {
 		@include span-columns(12);
 		height: 100%;
@@ -24,5 +49,17 @@
 		position: relative;
     	margin:{top: 350px;left: auto;right: auto;}
     	display: block;
-	}
+    	@include media($tabletLandTonotebook) {
+    		@include outer-container(70%);
+			margin:{top: 310px;}
+		}
+    	@include media($tablet) {
+			@include outer-container(90%);
+			margin:{top: 450px;}
+		}
+		 @include media($mobileTomobileLand) {
+			@include outer-container(85%);
+			margin:{top: 300px;}
+	    }
+	} 
 }

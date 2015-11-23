@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\Config',
-    'timestamp' => 1448052833,
-    'checksum' => '3d26bdb86eb95122477cd1504a2f0890',
+    'timestamp' => 1448313583,
+    'checksum' => '63bbc4674699777b66dfb0623087bf14',
     'data' => [
         'streams' => [
             'schemes' => [
@@ -19,6 +19,14 @@ return [
                     'prefixes' => [
                         '' => [
                             0 => 'user'
+                        ]
+                    ]
+                ],
+                'asset' => [
+                    'type' => 'ReadOnlyStream',
+                    'prefixes' => [
+                        '' => [
+                            0 => 'assets'
                         ]
                     ]
                 ],
@@ -100,12 +108,6 @@ return [
                         ]
                     ]
                 ],
-                'asset' => [
-                    'type' => 'ReadOnlyStream',
-                    'paths' => [
-                        0 => 'assets'
-                    ]
-                ],
                 'image' => [
                     'type' => 'ReadOnlyStream',
                     'paths' => [
@@ -160,8 +162,8 @@ return [
             ],
             'email' => [
                 'enabled' => true,
-                'from' => 'info@mediatrends.cl',
-                'to' => 'mauro@montana-studio.com',
+                'from' => '',
+                'to' => '',
                 'mailer' => [
                     'engine' => 'mail',
                     'smtp' => [
@@ -173,8 +175,13 @@ return [
                     ],
                     'sendmail' => [
                         'bin' => '/usr/sbin/sendmail'
-                    ],
-                    'default' => 'mail'
+                    ]
+                ]
+            ],
+            'error' => [
+                'enabled' => true,
+                'routes' => [
+                    404 => '/error'
                 ]
             ],
             'form' => [
@@ -183,7 +190,58 @@ return [
             'login' => [
                 'enabled' => true,
                 'built_in_css' => true,
-                'route' => false
+                'route' => false,
+                'redirect' => NULL,
+                'rememberme' => [
+                    'enabled' => true,
+                    'timeout' => 1800,
+                    'name' => 'grav-rememberme'
+                ],
+                'oauth' => [
+                    'enabled' => false,
+                    'user' => [
+                        'autocreate' => false,
+                        'access' => [
+                            'site' => [
+                                'login' => true
+                            ]
+                        ]
+                    ],
+                    'providers' => [
+                        'Facebook' => [
+                            'enabled' => false,
+                            'credentials' => [
+                                'key' => NULL,
+                                'secret' => NULL
+                            ]
+                        ],
+                        'Google' => [
+                            'enabled' => false,
+                            'credentials' => [
+                                'key' => NULL,
+                                'secret' => NULL
+                            ]
+                        ],
+                        'GitHub' => [
+                            'enabled' => false,
+                            'credentials' => [
+                                'key' => NULL,
+                                'secret' => NULL
+                            ]
+                        ],
+                        'Twitter' => [
+                            'enabled' => false,
+                            'credentials' => [
+                                'key' => NULL,
+                                'secret' => NULL
+                            ]
+                        ]
+                    ]
+                ]
+            ],
+            'problems' => [
+                'enabled' => true,
+                'built_in_css' => true
             ]
         ],
         'media' => [
@@ -517,6 +575,7 @@ return [
                     4 => 'rss',
                     5 => 'atom'
                 ],
+                'append_url_extension' => '',
                 'expires' => 604800,
                 'last_modified' => false,
                 'etag' => false,
@@ -557,7 +616,8 @@ return [
                 'auto_reload' => true,
                 'autoescape' => false,
                 'undefined_functions' => true,
-                'undefined_filters' => true
+                'undefined_filters' => true,
+                'umask_fix' => false
             ],
             'assets' => [
                 'css_pipeline' => false,
@@ -591,6 +651,9 @@ return [
                 'enable_media_timestamp' => false,
                 'upload_limit' => 0,
                 'unsupported_inline_types' => [
+                    
+                ],
+                'allowed_fallback_types' => [
                     
                 ]
             ],

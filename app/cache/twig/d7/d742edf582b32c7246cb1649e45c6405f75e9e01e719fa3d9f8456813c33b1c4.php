@@ -46,7 +46,7 @@ class __TwigTemplate_b39f4d3fb9a0105afbde57fe3a95d32fa59edfb7adb364e81a3ce6c256d
         ";
         // line 8
         $this->displayBlock('contents', $context, $blocks);
-        // line 58
+        // line 57
         echo "    </div>
 ";
     }
@@ -81,7 +81,7 @@ class __TwigTemplate_b39f4d3fb9a0105afbde57fe3a95d32fa59edfb7adb364e81a3ce6c256d
                 ";
         // line 28
         $this->displayBlock('group', $context, $blocks);
-        // line 56
+        // line 55
         echo "            </div>
         ";
     }
@@ -137,7 +137,7 @@ class __TwigTemplate_b39f4d3fb9a0105afbde57fe3a95d32fa59edfb7adb364e81a3ce6c256d
         // line 29
         echo "                    ";
         $this->displayBlock('input', $context, $blocks);
-        // line 55
+        // line 54
         echo "                ";
     }
 
@@ -162,7 +162,7 @@ class __TwigTemplate_b39f4d3fb9a0105afbde57fe3a95d32fa59edfb7adb364e81a3ce6c256d
         // line 36
         echo "                                ";
         $this->displayBlock('input_attributes', $context, $blocks);
-        // line 52
+        // line 51
         echo "                                />
                         </div>
                     ";
@@ -228,37 +228,30 @@ class __TwigTemplate_b39f4d3fb9a0105afbde57fe3a95d32fa59edfb7adb364e81a3ce6c256d
         }
         // line 46
         echo "                                    ";
-        if ($this->getAttribute((isset($context["field"]) ? $context["field"] : null), "size", array())) {
-            echo "size=\"";
-            echo $this->getAttribute((isset($context["field"]) ? $context["field"] : null), "size", array());
-            echo "\"";
-        }
-        // line 47
-        echo "                                    ";
         if (twig_in_filter($this->getAttribute($this->getAttribute((isset($context["field"]) ? $context["field"] : null), "validate", array()), "required", array()), array(0 => "on", 1 => "true", 2 => 1))) {
             echo "required=\"required\"";
         }
-        // line 48
+        // line 47
         echo "                                    ";
         if ($this->getAttribute($this->getAttribute((isset($context["field"]) ? $context["field"] : null), "validate", array()), "pattern", array())) {
             echo "pattern=\"";
             echo $this->getAttribute($this->getAttribute((isset($context["field"]) ? $context["field"] : null), "validate", array()), "pattern", array());
             echo "\"";
         }
-        // line 49
+        // line 48
         echo "                                    ";
         if ($this->getAttribute($this->getAttribute((isset($context["field"]) ? $context["field"] : null), "validate", array()), "message", array())) {
             echo "title=\"";
             echo $this->env->getExtension('GravTwigExtension')->translate(twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["field"]) ? $context["field"] : null), "validate", array()), "message", array())));
             echo "\"
                                     ";
-        } elseif ($this->getAttribute(        // line 50
+        } elseif ($this->getAttribute(        // line 49
 (isset($context["field"]) ? $context["field"] : null), "title", array(), "any", true, true)) {
             echo "title=\"";
             echo $this->env->getExtension('GravTwigExtension')->translate(twig_escape_filter($this->env, $this->getAttribute((isset($context["field"]) ? $context["field"] : null), "title", array())));
             echo "\" ";
         }
-        // line 51
+        // line 50
         echo "                                ";
     }
 
@@ -274,7 +267,7 @@ class __TwigTemplate_b39f4d3fb9a0105afbde57fe3a95d32fa59edfb7adb364e81a3ce6c256d
 
     public function getDebugInfo()
     {
-        return array (  262 => 51,  256 => 50,  249 => 49,  242 => 48,  237 => 47,  230 => 46,  223 => 45,  218 => 44,  213 => 43,  208 => 42,  201 => 41,  196 => 40,  189 => 39,  182 => 38,  175 => 37,  172 => 36,  166 => 52,  163 => 36,  159 => 34,  154 => 33,  148 => 30,  145 => 29,  141 => 55,  138 => 29,  135 => 28,  129 => 25,  125 => 24,  120 => 23,  117 => 22,  110 => 17,  104 => 15,  96 => 13,  93 => 12,  90 => 11,  85 => 56,  83 => 28,  80 => 27,  78 => 22,  72 => 21,  68 => 19,  66 => 11,  58 => 9,  55 => 8,  50 => 58,  48 => 8,  41 => 7,  35 => 6,  32 => 5,  30 => 4,  28 => 2,  26 => 1,);
+        return array (  255 => 50,  249 => 49,  242 => 48,  235 => 47,  230 => 46,  223 => 45,  218 => 44,  213 => 43,  208 => 42,  201 => 41,  196 => 40,  189 => 39,  182 => 38,  175 => 37,  172 => 36,  166 => 51,  163 => 36,  159 => 34,  154 => 33,  148 => 30,  145 => 29,  141 => 54,  138 => 29,  135 => 28,  129 => 25,  125 => 24,  120 => 23,  117 => 22,  110 => 17,  104 => 15,  96 => 13,  93 => 12,  90 => 11,  85 => 55,  83 => 28,  80 => 27,  78 => 22,  72 => 21,  68 => 19,  66 => 11,  58 => 9,  55 => 8,  50 => 57,  48 => 8,  41 => 7,  35 => 6,  32 => 5,  30 => 4,  28 => 2,  26 => 1,);
     }
 }
 /* {% set originalValue = originalValue is defined ? originalValue : value %}*/
@@ -322,7 +315,6 @@ class __TwigTemplate_b39f4d3fb9a0105afbde57fe3a95d32fa59edfb7adb364e81a3ce6c256d
 /*                                     {% if field.novalidate in ['on', 'true', 1] %}novalidate="novalidate"{% endif %}*/
 /*                                     {% if field.readonly in ['on', 'true', 1] %}readonly="readonly"{% endif %}*/
 /*                                     {% if field.autocomplete in ['on', 'off'] %}autocomplete="{{ field.autocomplete }}"{% endif %}*/
-/*                                     {% if field.size %}size="{{ field.size }}"{% endif %}*/
 /*                                     {% if field.validate.required in ['on', 'true', 1] %}required="required"{% endif %}*/
 /*                                     {% if field.validate.pattern %}pattern="{{ field.validate.pattern }}"{% endif %}*/
 /*                                     {% if field.validate.message %}title="{{ field.validate.message|e|t }}"*/

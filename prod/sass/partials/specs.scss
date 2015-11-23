@@ -3,11 +3,16 @@
 	background: $first_color;
 	color:#fff;
 	padding:100px 0;
+	margin:0;
 	h2 {
 		font:{size:em(50)};
 		@extend .text-center;
 		margin:0;
 		text:{transform:uppercase;}
+		@include media($mobileTomobileLand) {
+			font:{size:em(38)};
+			line-height: 38px;
+	    }
 	}
 	p {
 		@extend .text-center;
@@ -15,16 +20,43 @@
 		margin:{top:15px !important;}
 		font:{size: em(20);weight:300;}
 		line-height: 39px;
+		@include media($mobileLandTotablet) {
+			@include outer-container(90%);
+		}
+		@include media($mobileTomobileLand) {
+			@include outer-container(90%);
+		}
+		@include media($mobileTomobileLand) {
+			@include span-columns(12);
+			font-size: 18px;
+			line-height: 31px;
+	    }
 	}
 	ul {
 		@include outer-container(50%);
 		@include pad(0);
 		margin:60px auto 30px;
+		@include media ($notebook) {
+			@include outer-container(70%);
+		}
+		@include media($desktop) {
+			@include outer-container(60%);
+		}
+		@include media($mobileLandTotablet) {
+			@include outer-container(90%);
+		}
+		@include media($mobileTomobileLand) {
+			@include outer-container(96%);
+			margin:{top:100px;}
+		}
 		li {
 			list-style: none;
 			font:{size:em(16);weight:300;};
 			padding:20px 60px;
 			border:{bottom:1px solid #343434};
+			@include media($mobileTomobileLand) {
+				padding:{right:10px;}
+			}
 		}
 	}
 	mark {

@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'system/languages/en.yaml',
-    'modified' => 1448024412,
+    'modified' => 1448313237,
     'data' => [
         'FRONTMATTER_ERROR_PAGE' => '---
 title: %1$s
@@ -121,6 +121,10 @@ Path: `%2$s`
             'MO_PLURAL' => 'mos',
             'YR_PLURAL' => 'yrs',
             'DEC_PLURAL' => 'decs'
+        ],
+        'FORM' => [
+            'VALIDATION_FAIL' => '<b>Validation failed:</b>',
+            'INVALID_INPUT' => 'Invalid input in'
         ]
     ]
 ];

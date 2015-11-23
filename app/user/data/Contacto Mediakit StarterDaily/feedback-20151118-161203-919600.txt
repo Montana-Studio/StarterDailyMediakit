@@ -1,6 +1,0 @@
-nombre: 4werr
-empresa: eqwewqeq
-marca: eqwewe
-email: qweqw@dadas.cl
-telefono: 4123324
-pais: option2

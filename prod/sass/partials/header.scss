@@ -11,13 +11,29 @@
 		@include outer-container(60%);
 		height: 56px;
 		display: table;
+		@include media($tabletLandTonotebook) {
+			@include outer-container(70%);
+		}
+		@include media($tablet) {
+			@include outer-container(95%);
+		}
+		@include media($mobileTomobileLand) {
+			@include outer-container(98%);
+			min-width: 90%;
+	    }
 		.logo {
 			@include span-columns(2.5);	
 			display: table-cell;
 			vertical-align: middle;
 			float: none;
+			@include media($mobileTomobileLand) {
+				@include span-columns(7);	
+		    }
 			h1 {
 				margin:0;
+				@include media($mobileTomobileLand) {
+					margin:{top: 5px;}
+			    }
 				a {
 					height: 22px;
 					img {
@@ -33,6 +49,9 @@
 			display: table-cell;
 			vertical-align: middle;
 			float: none;
+			@include media($mobileTomobileLand) {
+				display: none;
+		    }
 			.navigation {
 				@include span-columns(12);
 				margin:0;

@@ -7,7 +7,6 @@ html {
 		padding: 0;
 	}
 }
-
 .text-left {
 	text:{align: left;}
 }
@@ -17,3 +16,14 @@ html {
 .text-right {
 	text:{align: right;}
 }
+.title-metric {
+	font:{family:$font_first;}
+	color:$second_color;
+	margin:5px 0;
+}
+.line-metric {
+	@include span-columns(12);
+	margin:{top:5px;}
+	border:1px solid $second_color;
+}
+

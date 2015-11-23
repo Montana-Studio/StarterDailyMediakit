@@ -7,8 +7,8 @@ class __TwigTemplate_ce2618daab98959e94db243090d107c2e27487536611eb1311d49f9285b
     {
         parent::__construct($env);
 
-        // line 2
-        $this->parent = $this->loadTemplate("forms/default/form.html.twig", "modular/form.html.twig", 2);
+        // line 1
+        $this->parent = $this->loadTemplate("forms/default/form.html.twig", "modular/form.html.twig", 1);
         $this->blocks = array(
         );
     }
@@ -35,8 +35,7 @@ class __TwigTemplate_ce2618daab98959e94db243090d107c2e27487536611eb1311d49f9285b
 
     public function getDebugInfo()
     {
-        return array (  11 => 2,);
+        return array (  11 => 1,);
     }
 }
-/* */
 /* {% extends "forms/default/form.html.twig" %}*/

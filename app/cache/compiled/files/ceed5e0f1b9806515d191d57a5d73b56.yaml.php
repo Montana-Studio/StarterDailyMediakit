@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'system/blueprints/config/system.yaml',
-    'modified' => 1448024412,
+    'modified' => 1448313237,
     'data' => [
         'title' => 'PLUGIN_ADMIN.SYSTEM',
         'form' => [
@@ -88,7 +88,7 @@ return [
                             'options' => [
                                 'F jS \\a\\t g:ia' => 'Date1',
                                 'l jS \\of F g:i A' => 'Date2',
-                                'D, m M Y G:i:s' => 'Date3',
+                                'D, d M Y G:i:s' => 'Date3',
                                 'd-m-y G:i' => 'Date4',
                                 'jS M Y' => 'Date5'
                             ]
@@ -102,7 +102,7 @@ return [
                             'options' => [
                                 'F jS \\a\\t g:ia' => 'Date1',
                                 'l jS \\of F g:i A' => 'Date2',
-                                'D, m M Y G:i:s' => 'Date3',
+                                'D, d M Y G:i:s' => 'Date3',
                                 'd-m-y G:i' => 'Date4',
                                 'jS M Y' => 'Date5'
                             ]
@@ -171,6 +171,12 @@ return [
                                 'twig' => 'Twig Events'
                             ],
                             'use' => 'keys'
+                        ],
+                        'pages.append_url_extension' => [
+                            'type' => 'text',
+                            'placeholder' => 'e.g. .html',
+                            'label' => 'PLUGIN_ADMIN.APPEND_URL_EXT',
+                            'help' => 'PLUGIN_ADMIN.APPEND_URL_EXT_HELP'
                         ],
                         'pages.redirect_default_route' => [
                             'type' => 'toggle',
@@ -255,16 +261,6 @@ return [
                             'validate' => [
                                 'type' => 'bool'
                             ]
-                        ],
-                        'pages.fallback_types' => [
-                            'type' => 'selectize',
-                            'size' => 'large',
-                            'label' => 'PLUGIN_ADMIN.FALLBACK_TYPES',
-                            'help' => 'PLUGIN_ADMIN.FALLBACK_TYPES_HELP',
-                            'classes' => 'fancy',
-                            'validate' => [
-                                'type' => 'commalist'
-                            ]
                         ]
                     ]
                 ],
@@ -276,6 +272,7 @@ return [
                         'languages.supported' => [
                             'type' => 'selectize',
                             'size' => 'large',
+                            'placeholder' => 'e.g. en, fr',
                             'label' => 'PLUGIN_ADMIN.SUPPORTED',
                             'help' => 'PLUGIN_ADMIN.SUPPORTED_HELP',
                             'classes' => 'fancy',
@@ -845,6 +842,26 @@ return [
                             ],
                             'validate' => [
                                 'type' => 'bool'
+                            ]
+                        ],
+                        'media.allowed_fallback_types' => [
+                            'type' => 'selectize',
+                            'size' => 'large',
+                            'label' => 'PLUGIN_ADMIN.FALLBACK_TYPES',
+                            'help' => 'PLUGIN_ADMIN.FALLBACK_TYPES_HELP',
+                            'classes' => 'fancy',
+                            'validate' => [
+                                'type' => 'commalist'
+                            ]
+                        ],
+                        'media.unsupported_inline_types' => [
+                            'type' => 'selectize',
+                            'size' => 'large',
+                            'label' => 'PLUGIN_ADMIN.INLINE_TYPES',
+                            'help' => 'PLUGIN_ADMIN.INLINE_TYPES_HELP',
+                            'classes' => 'fancy',
+                            'validate' => [
+                                'type' => 'commalist'
                             ]
                         ]
                     ]

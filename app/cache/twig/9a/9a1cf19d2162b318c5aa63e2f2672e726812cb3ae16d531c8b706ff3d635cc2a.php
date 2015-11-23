@@ -51,7 +51,7 @@ class __TwigTemplate_43b5dfb0b8a0559bd151a11ce826ed13df79c3d2d38c3d0636fe3b415db
                 echo (isset($context["current_module"]) ? $context["current_module"] : null);
                 echo "\"><a href=\"#";
                 echo $this->getAttribute($this, "pageLinkName", array(0 => $this->getAttribute($context["module"], "menu", array())), "method");
-                echo "\">";
+                echo "\" class=\"animate-scroll\">";
                 echo $this->getAttribute($context["module"], "menu", array());
                 echo "</a></li>
         ";
@@ -69,7 +69,7 @@ class __TwigTemplate_43b5dfb0b8a0559bd151a11ce826ed13df79c3d2d38c3d0636fe3b415db
                 <a href=\"";
                 // line 16
                 echo $this->getAttribute($context["mitem"], "url", array());
-                echo "\">
+                echo "\" class=\"animation-menu\">
                     ";
                 // line 17
                 if ($this->getAttribute($context["mitem"], "icon", array())) {
@@ -178,11 +178,11 @@ class __TwigTemplate_43b5dfb0b8a0559bd151a11ce826ed13df79c3d2d38c3d0636fe3b415db
 /*         <ul class="navigation">*/
 /*         {% for module in page.collection() %}*/
 /*             {% set current_module = (module.active or module.activeChild) ? 'active' : '' %}*/
-/*             <li class="{{ current_module }}"><a href="#{{ _self.pageLinkName(module.menu) }}">{{ module.menu }}</a></li>*/
+/*             <li class="{{ current_module }}"><a href="#{{ _self.pageLinkName(module.menu) }}" class="animate-scroll">{{ module.menu }}</a></li>*/
 /*         {% endfor %}*/
 /*         {% for mitem in site.menu %}*/
 /*             <li>*/
-/*                 <a href="{{ mitem.url }}">*/
+/*                 <a href="{{ mitem.url }}" class="animation-menu">*/
 /*                     {% if mitem.icon %}<i class="fa fa-{{ mitem.icon }}"></i>{% endif %}*/
 /*                     {{ mitem.text }}*/
 /*                 </a>*/

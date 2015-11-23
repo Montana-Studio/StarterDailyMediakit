@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'user/config/site.yaml',
-    'modified' => 1448024412,
+    'modified' => 1448313245,
     'data' => [
         'title' => 'MediaKit',
         'author' => [

@@ -1,15 +1,36 @@
 #content {
 	@include span-columns(12);
+	margin:0;
 	p {
 		width: 50%;
 		margin:0 !important;
 		float: left;
+		@include media($tablet) {
+			@include span-columns(12);
+   			height: 400px;
+		}
+		@include media($mobileTomobileLand) {
+			@include span-columns(12);
+	    }
 		.content-image {
 			@include span-columns(12);
-			height: 900px;
+			height: 1000px;
 			margin:0;
+			@include media ($notebook) {
+				height: 800px;
+			}
+			@include media($desktop) {
+				height: 1000px;
+			}
+			@include media($tablet) {
+				@include span-columns(12);
+	   			height: 400px;
+			}
+			@include media($mobileTomobileLand) {
+				@include span-columns(12);
+				height: 440px;
+		    }
 		}
-
 	}
 	.content-info {
 		width: 50%;
@@ -19,6 +40,25 @@
 		color:#fff;
 		margin:0;
 		padding:150px 80px;
+		@include media ($notebook) {
+			height: 800px;
+			padding:150px 40px;
+		}
+		@include media($desktop) {
+			height: 1000px;
+			padding:240px 60px;
+		}
+		@include media($tablet) {
+			@include span-columns(12);
+			padding: 40px 60px;
+   			height: 400px;
+		}
+		@include media($mobileTomobileLand) {
+			@include span-columns(12);
+		    position: relative;
+			height: initial;
+			padding: 90px 20px;
+	    }
 		&.info-right {
 			float: right !important;
 			background: #fff;
@@ -27,6 +67,9 @@
 				@include span-columns(10.5);
 				line-height: 31px;
 				margin:{top:20px;}
+				@include media($mobileTomobileLand) {
+					display: none;
+			    }
 				mark {
 					margin:{right:5px;}
 					font:{size:em(14)};
@@ -41,6 +84,19 @@
 			font:{size:em(50)};
 			clear: right;
 			margin:0;
+			@include media ($notebook) {
+				@include span-columns(8);
+				font:{size:em(43)};
+				line-height: 46px;
+			}
+			@include media($desktop) {
+				font:{size:em(50)};
+			}
+			@include media($mobileTomobileLand) {
+				@include span-columns(12);
+				font:{size:em(38)};
+				line-height: 38px;
+		    }
 		}
 		p {
 			@include span-columns(9);
@@ -48,7 +104,19 @@
 			margin:{top:30px !important;}
 			font:{size: em(20);weight:300;}
     		line-height: 39px;
+    		@include media ($notebook) {
+    			font-size: 19px;
+    			margin-top: 19px !important;
+			}
+			@include media($desktop) {
+				font:{size: em(20);weight:300;}
+				margin:{top:30px !important;}
+			}
+			@include media($mobileTomobileLand) {
+				@include span-columns(12);
+				font-size: 18px;
+    			line-height: 31px;
+		    }
 		}
 	}
-	
 }
