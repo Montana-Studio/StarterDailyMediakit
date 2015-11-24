@@ -25,9 +25,6 @@
 		}
 		@include media($mobileTomobileLand) {
 			@include outer-container(90%);
-		}
-		@include media($mobileTomobileLand) {
-			@include span-columns(12);
 			font-size: 18px;
 			line-height: 31px;
 	    }
@@ -35,7 +32,7 @@
 	ul {
 		@include outer-container(50%);
 		@include pad(0);
-		margin:60px auto 30px;
+		margin:40px auto 30px;
 		@include media ($notebook) {
 			@include outer-container(70%);
 		}
@@ -47,7 +44,10 @@
 		}
 		@include media($mobileTomobileLand) {
 			@include outer-container(96%);
-			margin:{top:100px;}
+			margin:{top:40px;}
+		}
+		@include media($mobileLand) {
+			float: none;
 		}
 		li {
 			list-style: none;

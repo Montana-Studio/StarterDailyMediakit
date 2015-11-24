@@ -15,7 +15,7 @@ tempus nisl vulputate. Maecenas mattis dictum tortor ut iaculis. Duis pulvinar e
 ![](metrica_flujo.gif)
 </div>
 
-<div markdown="1" class="img-metric-module">
+<div markdown="1" class="img-metric-module img-module-right">
 ###Hendrerit porttitor diam porttitor{.title-metric}
 <div class="line-metric"></div>
 ![](metrica_segmentacion.gif)

@@ -2,12 +2,11 @@
 	@include span-columns(12);
 	margin:0;
 	p {
-		width: 50%;
-		margin:0 !important;
+		width:50%;
+		margin:0;
 		float: left;
 		@include media($tablet) {
 			@include span-columns(12);
-   			height: 400px;
 		}
 		@include media($mobileTomobileLand) {
 			@include span-columns(12);
@@ -26,9 +25,15 @@
 				@include span-columns(12);
 	   			height: 400px;
 			}
+			@include media($tabletLand) {
+				height: 800px;
+			}
 			@include media($mobileTomobileLand) {
 				@include span-columns(12);
 				height: 440px;
+		    }
+		    @include media($mobileLand) {
+				height:400px; 
 		    }
 		}
 	}
@@ -53,29 +58,65 @@
 			padding: 40px 60px;
    			height: 400px;
 		}
+		@include media($tabletLand) {
+			padding: 50px 20px;
+			height: 800px;
+		}
 		@include media($mobileTomobileLand) {
 			@include span-columns(12);
 		    position: relative;
 			height: initial;
 			padding: 90px 20px;
 	    }
+	    @include media($mobileLand) {
+			height:400px; 
+			padding:20px;
+	    }
 		&.info-right {
-			float: right !important;
 			background: #fff;
 			color:$first_color;
+			@include media($tablet) {
+				display: table;
+			}
+			@include media($notebookTodesktop) {
+				float:right;
+			}
+			@include media($tabletLand) {
+				float:right;
+			}
+			@include media($mobileLand) {
+				float:right;
+			}
 			.marcadores-content {
 				@include span-columns(10.5);
 				line-height: 31px;
 				margin:{top:20px;}
-				@include media($mobileTomobileLand) {
-					display: none;
+				@include media($tabletLand) {
+					@include span-columns(12);
 			    }
+				@include media($mobileTomobileLand) {
+					display:table;
+					@include span-columns(12);
+			    }
+			    @include media($mobileLand) {
+			    	@include span-columns(12);
+			    	margin:{top:5px;}
+				}
 				mark {
 					margin:{right:5px;}
 					font:{size:em(14)};
 					background: $first_color;
 					color:#fff;
 					padding:2px 5px;
+					display: inline-block;
+					line-height: 22px;
+					@include media($mobileTomobileLand) {
+						font:{size:em(12)};
+				    }
+				     @include media($mobileLand) {
+						font:{size:em(10);}
+	    				padding: 0 4px;
+					}
 				}
 			}
 		}
@@ -92,10 +133,17 @@
 			@include media($desktop) {
 				font:{size:em(50)};
 			}
+			@include media($tabletLand) {
+				@include span-columns(10);
+			}
 			@include media($mobileTomobileLand) {
 				@include span-columns(12);
 				font:{size:em(38)};
 				line-height: 38px;
+		    }
+		    @include media($mobileLand) {
+				font:{size:em(28)};
+				line-height: 28px;
 		    }
 		}
 		p {
@@ -112,10 +160,22 @@
 				font:{size: em(20);weight:300;}
 				margin:{top:30px !important;}
 			}
+			@include media($tablet) {
+				@include span-columns(12);
+			}
+			@include media($tabletLand) {
+				@include span-columns(10);
+			}
 			@include media($mobileTomobileLand) {
 				@include span-columns(12);
 				font-size: 18px;
     			line-height: 31px;
+		    }
+		    @include media($mobileLand) {
+		    	@include span-columns(12);
+		    	margin:{top:5px !important;}
+				font:{size:em(14)};
+				line-height: 25px;
 		    }
 		}
 	}

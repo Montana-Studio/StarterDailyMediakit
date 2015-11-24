@@ -1,6 +1,6 @@
 ---
 title: Gracias
-published: true
+published: false
 body_classes: mediakit_end
 ---
 

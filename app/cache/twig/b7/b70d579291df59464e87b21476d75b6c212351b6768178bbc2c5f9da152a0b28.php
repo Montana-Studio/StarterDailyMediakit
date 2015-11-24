@@ -56,12 +56,12 @@ class __TwigTemplate_adc057dbfb8b829c3f2473b5a4a5c57d31178d33789b0181d68a9eaa0b8
     ";
         // line 65
         $this->displayBlock('footer', $context, $blocks);
-        // line 68
+        // line 81
         echo "
     ";
-        // line 69
+        // line 82
         $this->displayBlock('bottom', $context, $blocks);
-        // line 77
+        // line 90
         echo "</body>
 </html>
 ";
@@ -225,36 +225,55 @@ class __TwigTemplate_adc057dbfb8b829c3f2473b5a4a5c57d31178d33789b0181d68a9eaa0b8
     public function block_footer($context, array $blocks = array())
     {
         // line 66
-        echo "      <footer class=\"footer\"></footer>
+        echo "      <footer class=\"footer\">
+        <div class=\"end_mediakit_content\">
+            <div class=\"end_mediakit\">
+                <img src=\"";
+        // line 69
+        echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
+        echo "/images/imagen-bg.jpg\"/> 
+            </div>
+            <div class=\"bg-color\"></div>
+            <div markdown=\"1\" class=\"end_info\">
+                <div markdown=\"1\" class=\"end_info-center\">
+                    <img src=\"";
+        // line 74
+        echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
+        echo "/images/logo-starterdaily-r.png\"/>
+                    <h5>gracias</h5>
+                </div>  
+            </div>   
+        </div>
+      </footer>
     ";
     }
 
-    // line 69
+    // line 82
     public function block_bottom($context, array $blocks = array())
     {
-        // line 70
+        // line 83
         echo "      ";
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 75
+        // line 88
         echo "      ";
         echo $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "js", array(), "method");
         echo "
     ";
     }
 
-    // line 70
+    // line 83
     public function block_javascripts($context, array $blocks = array())
     {
-        // line 71
+        // line 84
         echo "          ";
         $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "jquery", 1 => 101), "method");
-        // line 72
+        // line 85
         echo "          ";
         $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/modernizr.custom.71422.js", 1 => 100), "method");
-        // line 73
+        // line 86
         echo "          ";
         $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/starterdaily-mediakit.min.js", 1 => 99), "method");
-        // line 74
+        // line 87
         echo "      ";
     }
 
@@ -270,7 +289,7 @@ class __TwigTemplate_adc057dbfb8b829c3f2473b5a4a5c57d31178d33789b0181d68a9eaa0b8
 
     public function getDebugInfo()
     {
-        return array (  258 => 74,  255 => 73,  252 => 72,  249 => 71,  246 => 70,  239 => 75,  236 => 70,  233 => 69,  228 => 66,  225 => 65,  220 => 61,  215 => 62,  213 => 61,  208 => 60,  205 => 59,  201 => 49,  198 => 48,  195 => 47,  190 => 43,  179 => 50,  176 => 47,  173 => 46,  170 => 45,  167 => 44,  165 => 43,  156 => 37,  152 => 36,  144 => 30,  141 => 29,  137 => 23,  134 => 22,  131 => 21,  128 => 20,  125 => 19,  122 => 18,  119 => 17,  117 => 16,  114 => 15,  111 => 14,  108 => 13,  105 => 12,  97 => 24,  95 => 12,  90 => 10,  85 => 9,  83 => 8,  74 => 7,  71 => 6,  65 => 77,  63 => 69,  60 => 68,  58 => 65,  55 => 64,  53 => 59,  50 => 58,  48 => 29,  44 => 28,  41 => 27,  39 => 6,  36 => 5,  34 => 4,  29 => 1,);
+        return array (  277 => 87,  274 => 86,  271 => 85,  268 => 84,  265 => 83,  258 => 88,  255 => 83,  252 => 82,  241 => 74,  233 => 69,  228 => 66,  225 => 65,  220 => 61,  215 => 62,  213 => 61,  208 => 60,  205 => 59,  201 => 49,  198 => 48,  195 => 47,  190 => 43,  179 => 50,  176 => 47,  173 => 46,  170 => 45,  167 => 44,  165 => 43,  156 => 37,  152 => 36,  144 => 30,  141 => 29,  137 => 23,  134 => 22,  131 => 21,  128 => 20,  125 => 19,  122 => 18,  119 => 17,  117 => 16,  114 => 15,  111 => 14,  108 => 13,  105 => 12,  97 => 24,  95 => 12,  90 => 10,  85 => 9,  83 => 8,  74 => 7,  71 => 6,  65 => 90,  63 => 82,  60 => 81,  58 => 65,  55 => 64,  53 => 59,  50 => 58,  48 => 29,  44 => 28,  41 => 27,  39 => 6,  36 => 5,  34 => 4,  29 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -338,7 +357,20 @@ class __TwigTemplate_adc057dbfb8b829c3f2473b5a4a5c57d31178d33789b0181d68a9eaa0b8
 /*     {% endblock %}*/
 /* */
 /*     {% block footer %}*/
-/*       <footer class="footer"></footer>*/
+/*       <footer class="footer">*/
+/*         <div class="end_mediakit_content">*/
+/*             <div class="end_mediakit">*/
+/*                 <img src="{{ theme_url }}/images/imagen-bg.jpg"/> */
+/*             </div>*/
+/*             <div class="bg-color"></div>*/
+/*             <div markdown="1" class="end_info">*/
+/*                 <div markdown="1" class="end_info-center">*/
+/*                     <img src="{{ theme_url }}/images/logo-starterdaily-r.png"/>*/
+/*                     <h5>gracias</h5>*/
+/*                 </div>  */
+/*             </div>   */
+/*         </div>*/
+/*       </footer>*/
 /*     {% endblock %}*/
 /* */
 /*     {% block bottom %}*/

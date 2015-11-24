@@ -94,6 +94,15 @@ html {
           clear: both;
           content: "";
           display: table; } }
+    @media screen and (min-width: 480px) and (max-width: 690px) {
+      #header .content-menu {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto; }
+        #header .content-menu::after {
+          clear: both;
+          content: "";
+          display: table; } }
     #header .content-menu .logo {
       float: left;
       display: block;
@@ -133,6 +142,9 @@ html {
       #header .content-menu #navbar:last-child {
         margin-right: 0; }
       @media screen and (min-width: 320px) and (max-width: 640px) {
+        #header .content-menu #navbar {
+          display: none; } }
+      @media screen and (min-width: 480px) and (max-width: 690px) {
         #header .content-menu #navbar {
           display: none; } }
       #header .content-menu #navbar .navigation {
@@ -202,9 +214,9 @@ html {
   @media screen and (min-width: 768px) and (max-width: 1023px) {
     #inicio {
       height: 1024px; } }
-  @media screen and (min-width: 320px) and (max-width: 640px) {
+  @media screen and (min-width: 480px) and (max-width: 690px) {
     #inicio {
-      height: 650px; } }
+      height: 390px; } }
   #inicio .background-home {
     float: left;
     display: block;
@@ -266,6 +278,16 @@ html {
           clear: both;
           content: "";
           display: table; } }
+    @media screen and (min-width: 480px) and (max-width: 690px) {
+      #inicio .logotipe-home {
+        max-width: 55%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 180px; }
+        #inicio .logotipe-home::after {
+          clear: both;
+          content: "";
+          display: table; } }
 
 #content {
   float: left;
@@ -277,15 +299,14 @@ html {
     margin-right: 0; }
   #content p {
     width: 50%;
-    margin: 0 !important;
+    margin: 0;
     float: left; }
     @media screen and (min-width: 768px) and (max-width: 1023px) {
       #content p {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 100%;
-        height: 400px; }
+        width: 100%; }
         #content p:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 320px) and (max-width: 640px) {
@@ -320,6 +341,9 @@ html {
           height: 400px; }
           #content p .content-image:last-child {
             margin-right: 0; } }
+      @media screen and (min-width: 1024px) and (max-width: 1279px) {
+        #content p .content-image {
+          height: 800px; } }
       @media screen and (min-width: 320px) and (max-width: 640px) {
         #content p .content-image {
           float: left;
@@ -329,6 +353,9 @@ html {
           height: 440px; }
           #content p .content-image:last-child {
             margin-right: 0; } }
+      @media screen and (min-width: 480px) and (max-width: 690px) {
+        #content p .content-image {
+          height: 400px; } }
   #content .content-info {
     width: 50%;
     float: left;
@@ -355,6 +382,10 @@ html {
         height: 400px; }
         #content .content-info:last-child {
           margin-right: 0; } }
+    @media screen and (min-width: 1024px) and (max-width: 1279px) {
+      #content .content-info {
+        padding: 50px 20px;
+        height: 800px; } }
     @media screen and (min-width: 320px) and (max-width: 640px) {
       #content .content-info {
         float: left;
@@ -366,10 +397,25 @@ html {
         padding: 90px 20px; }
         #content .content-info:last-child {
           margin-right: 0; } }
+    @media screen and (min-width: 480px) and (max-width: 690px) {
+      #content .content-info {
+        height: 400px;
+        padding: 20px; } }
     #content .content-info.info-right {
-      float: right !important;
       background: #fff;
       color: #444; }
+      @media screen and (min-width: 768px) and (max-width: 1023px) {
+        #content .content-info.info-right {
+          display: table; } }
+      @media screen and (min-width: 1280px) and (min-width: 1440px) {
+        #content .content-info.info-right {
+          float: right; } }
+      @media screen and (min-width: 1024px) and (max-width: 1279px) {
+        #content .content-info.info-right {
+          float: right; } }
+      @media screen and (min-width: 480px) and (max-width: 690px) {
+        #content .content-info.info-right {
+          float: right; } }
       #content .content-info.info-right .marcadores-content {
         float: left;
         display: block;
@@ -379,15 +425,47 @@ html {
         margin-top: 20px; }
         #content .content-info.info-right .marcadores-content:last-child {
           margin-right: 0; }
+        @media screen and (min-width: 1024px) and (max-width: 1279px) {
+          #content .content-info.info-right .marcadores-content {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 100%; }
+            #content .content-info.info-right .marcadores-content:last-child {
+              margin-right: 0; } }
         @media screen and (min-width: 320px) and (max-width: 640px) {
           #content .content-info.info-right .marcadores-content {
-            display: none; } }
+            display: table;
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 100%; }
+            #content .content-info.info-right .marcadores-content:last-child {
+              margin-right: 0; } }
+        @media screen and (min-width: 480px) and (max-width: 690px) {
+          #content .content-info.info-right .marcadores-content {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 100%;
+            margin-top: 5px; }
+            #content .content-info.info-right .marcadores-content:last-child {
+              margin-right: 0; } }
         #content .content-info.info-right .marcadores-content mark {
           margin-right: 5px;
           font-size: 0.875em;
           background: #444;
           color: #fff;
-          padding: 2px 5px; }
+          padding: 2px 5px;
+          display: inline-block;
+          line-height: 22px; }
+          @media screen and (min-width: 320px) and (max-width: 640px) {
+            #content .content-info.info-right .marcadores-content mark {
+              font-size: 0.75em; } }
+          @media screen and (min-width: 480px) and (max-width: 690px) {
+            #content .content-info.info-right .marcadores-content mark {
+              font-size: 0.625em;
+              padding: 0 4px; } }
     #content .content-info h3 {
       float: left;
       display: block;
@@ -411,6 +489,14 @@ html {
       @media screen and (min-width: 1440px) {
         #content .content-info h3 {
           font-size: 3.125em; } }
+      @media screen and (min-width: 1024px) and (max-width: 1279px) {
+        #content .content-info h3 {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 82.94039%; }
+          #content .content-info h3:last-child {
+            margin-right: 0; } }
       @media screen and (min-width: 320px) and (max-width: 640px) {
         #content .content-info h3 {
           float: left;
@@ -421,6 +507,10 @@ html {
           line-height: 38px; }
           #content .content-info h3:last-child {
             margin-right: 0; } }
+      @media screen and (min-width: 480px) and (max-width: 690px) {
+        #content .content-info h3 {
+          font-size: 1.75em;
+          line-height: 28px; } }
     #content .content-info p {
       float: left;
       display: block;
@@ -442,6 +532,22 @@ html {
           font-size: 1.25em;
           font-weight: 300;
           margin-top: 30px !important; } }
+      @media screen and (min-width: 768px) and (max-width: 1023px) {
+        #content .content-info p {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 100%; }
+          #content .content-info p:last-child {
+            margin-right: 0; } }
+      @media screen and (min-width: 1024px) and (max-width: 1279px) {
+        #content .content-info p {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 82.94039%; }
+          #content .content-info p:last-child {
+            margin-right: 0; } }
       @media screen and (min-width: 320px) and (max-width: 640px) {
         #content .content-info p {
           float: left;
@@ -450,6 +556,17 @@ html {
           width: 100%;
           font-size: 18px;
           line-height: 31px; }
+          #content .content-info p:last-child {
+            margin-right: 0; } }
+      @media screen and (min-width: 480px) and (max-width: 690px) {
+        #content .content-info p {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 100%;
+          margin-top: 5px !important;
+          font-size: 0.875em;
+          line-height: 25px; }
           #content .content-info p:last-child {
             margin-right: 0; } }
 
@@ -462,6 +579,9 @@ html {
   margin: 0; }
   #metric:last-child {
     margin-right: 0; }
+  @media screen and (min-width: 480px) and (max-width: 690px) {
+    #metric {
+      padding-top: 50px; } }
   #metric h2 {
     font-size: 3.125em;
     color: #444;
@@ -509,15 +629,52 @@ html {
           clear: both;
           content: "";
           display: table; } }
+    @media screen and (min-width: 480px) and (max-width: 690px) {
+      #metric p {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto; }
+        #metric p::after {
+          clear: both;
+          content: "";
+          display: table; } }
   #metric .module-one {
-    max-width: 65%;
+    max-width: 60%;
     margin-left: auto;
     margin-right: auto; }
     #metric .module-one::after {
       clear: both;
       content: "";
       display: table; }
+    @media screen and (min-width: 1024px) and (max-width: 1440px) {
+      #metric .module-one {
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto; }
+        #metric .module-one::after {
+          clear: both;
+          content: "";
+          display: table; } }
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+      #metric .module-one {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 60px; }
+        #metric .module-one::after {
+          clear: both;
+          content: "";
+          display: table; } }
     @media screen and (min-width: 320px) and (max-width: 640px) {
+      #metric .module-one {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto; }
+        #metric .module-one::after {
+          clear: both;
+          content: "";
+          display: table; } }
+    @media screen and (min-width: 480px) and (max-width: 690px) {
       #metric .module-one {
         max-width: 90%;
         margin-left: auto;
@@ -530,11 +687,11 @@ html {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 48.82117%;
+      width: 47.11521%;
       margin-top: 50px;
       margin-left: 0;
       margin-bottom: 140px;
-      margin-right: 0 !important; }
+      margin-right: 20px !important; }
       #metric .module-one .img-metric-module:last-child {
         margin-right: 0; }
       @media screen and (min-width: 1280px) {
@@ -545,12 +702,20 @@ html {
           width: 100%; }
           #metric .module-one .img-metric-module:last-child {
             margin-right: 0; } }
+      @media screen and (min-width: 1280px) {
+        #metric .module-one .img-metric-module {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 47.11521%; }
+          #metric .module-one .img-metric-module:last-child {
+            margin-right: 0; } }
       @media screen and (min-width: 1440px) {
         #metric .module-one .img-metric-module {
           float: left;
           display: block;
           margin-right: 2.35765%;
-          width: 48.82117%; }
+          width: 47.11521%; }
           #metric .module-one .img-metric-module:last-child {
             margin-right: 0; } }
       @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -580,11 +745,14 @@ html {
           margin: 0; }
           #metric .module-one .img-metric-module:last-child {
             margin-right: 0; } }
+      @media screen and (min-width: 480px) and (max-width: 690px) {
+        #metric .module-one .img-metric-module {
+          margin-bottom: 20px; } }
       #metric .module-one .img-metric-module .line-metric {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 91.4702%; }
+        width: 100%; }
         #metric .module-one .img-metric-module .line-metric:last-child {
           margin-right: 0; }
       #metric .module-one .img-metric-module p {
@@ -606,7 +774,13 @@ html {
         @media screen and (min-width: 768px) and (max-width: 1023px) {
           #metric .module-one .img-metric-module p {
             max-width: 90%; } }
+        @media screen and (min-width: 1024px) and (max-width: 1279px) {
+          #metric .module-one .img-metric-module p {
+            max-width: 90%; } }
         @media screen and (min-width: 320px) and (max-width: 640px) {
+          #metric .module-one .img-metric-module p {
+            max-width: 100%; } }
+        @media screen and (min-width: 480px) and (max-width: 690px) {
           #metric .module-one .img-metric-module p {
             max-width: 100%; } }
         #metric .module-one .img-metric-module p img {
@@ -650,6 +824,9 @@ html {
         @media screen and (min-width: 320px) and (max-width: 640px) {
           #metric .module-one .img-metric-module .imagen-full-module.module-right {
             margin-top: 40px !important; } }
+      #metric .module-one .img-metric-module.img-module-right {
+        margin-right: 0 !important;
+        float: right; }
   #metric .mapa-module {
     float: left;
     display: block;
@@ -661,16 +838,43 @@ html {
     #metric .mapa-module:last-child {
       margin-right: 0; }
     #metric .mapa-module .mapa-module-inside {
-      max-width: 90%;
+      max-width: 60%;
       margin-left: auto;
       margin-right: auto; }
       #metric .mapa-module .mapa-module-inside::after {
         clear: both;
         content: "";
         display: table; }
-      @media screen and (min-width: 1440px) {
+      @media screen and (min-width: 1024px) and (max-width: 1440px) {
         #metric .mapa-module .mapa-module-inside {
-          max-width: 60%;
+          max-width: 80%;
+          margin-left: auto;
+          margin-right: auto; }
+          #metric .mapa-module .mapa-module-inside::after {
+            clear: both;
+            content: "";
+            display: table; } }
+      @media screen and (min-width: 768px) and (max-width: 1023px) {
+        #metric .mapa-module .mapa-module-inside {
+          max-width: 90%;
+          margin-left: auto;
+          margin-right: auto; }
+          #metric .mapa-module .mapa-module-inside::after {
+            clear: both;
+            content: "";
+            display: table; } }
+      @media screen and (min-width: 320px) and (max-width: 640px) {
+        #metric .mapa-module .mapa-module-inside {
+          max-width: 90%;
+          margin-left: auto;
+          margin-right: auto; }
+          #metric .mapa-module .mapa-module-inside::after {
+            clear: both;
+            content: "";
+            display: table; } }
+      @media screen and (min-width: 480px) and (max-width: 690px) {
+        #metric .mapa-module .mapa-module-inside {
+          max-width: 90%;
           margin-left: auto;
           margin-right: auto; }
           #metric .mapa-module .mapa-module-inside::after {
@@ -684,13 +888,13 @@ html {
         width: 100%; }
         #metric .mapa-module .mapa-module-inside h3:last-child {
           margin-right: 0; }
-      #metric .mapa-module .mapa-module-inside .line-title {
+      #metric .mapa-module .mapa-module-inside .line-metric {
         float: left;
         display: block;
         margin-right: 2.35765%;
         width: 100%;
         margin-bottom: 40px; }
-        #metric .mapa-module .mapa-module-inside .line-title:last-child {
+        #metric .mapa-module .mapa-module-inside .line-metric:last-child {
           margin-right: 0; }
       #metric .mapa-module .mapa-module-inside p {
         max-width: 100%;
@@ -703,7 +907,7 @@ html {
           display: table; }
         @media screen and (min-width: 1024px) and (max-width: 1440px) {
           #metric .mapa-module .mapa-module-inside p {
-            max-width: 70%;
+            max-width: 95%;
             margin-left: auto;
             margin-right: auto; }
             #metric .mapa-module .mapa-module-inside p::after {
@@ -731,6 +935,12 @@ html {
     padding: 150px 0; }
     #metric .module-two:last-child {
       margin-right: 0; }
+    @media screen and (min-width: 320px) and (max-width: 640px) {
+      #metric .module-two {
+        padding: 20px 0; } }
+    @media screen and (min-width: 480px) and (max-width: 690px) {
+      #metric .module-two {
+        padding: 20px 0; } }
     #metric .module-two .two-module-inside {
       max-width: 90%;
       margin-left: auto;
@@ -742,6 +952,15 @@ html {
       @media screen and (min-width: 1440px) {
         #metric .module-two .two-module-inside {
           max-width: 60%;
+          margin-left: auto;
+          margin-right: auto; }
+          #metric .module-two .two-module-inside::after {
+            clear: both;
+            content: "";
+            display: table; } }
+      @media screen and (min-width: 1024px) and (max-width: 1440px) {
+        #metric .module-two .two-module-inside {
+          max-width: 80%;
           margin-left: auto;
           margin-right: auto; }
           #metric .module-two .two-module-inside::after {
@@ -767,6 +986,24 @@ html {
               clear: both;
               content: "";
               display: table; } }
+        @media screen and (min-width: 1024px) and (max-width: 1279px) {
+          #metric .module-two .two-module-inside p {
+            max-width: 70%;
+            margin-left: auto;
+            margin-right: auto; }
+            #metric .module-two .two-module-inside p::after {
+              clear: both;
+              content: "";
+              display: table; } }
+        @media screen and (min-width: 320px) and (max-width: 640px) {
+          #metric .module-two .two-module-inside p {
+            max-width: 90%;
+            margin-left: auto;
+            margin-right: auto; }
+            #metric .module-two .two-module-inside p::after {
+              clear: both;
+              content: "";
+              display: table; } }
         #metric .module-two .two-module-inside p img {
           width: 100%;
           height: auto;
@@ -781,6 +1018,12 @@ html {
           display: table; }
     #metric .module-two.publicados-module {
       padding-bottom: 40px; }
+      @media screen and (min-width: 320px) and (max-width: 640px) {
+        #metric .module-two.publicados-module {
+          padding-top: 40px; } }
+      @media screen and (min-width: 480px) and (max-width: 690px) {
+        #metric .module-two.publicados-module {
+          padding-top: 60px; } }
   #metric .module-three {
     float: left;
     display: block;
@@ -815,14 +1058,18 @@ html {
           margin-bottom: 0; } }
       @media screen and (min-width: 320px) and (max-width: 640px) {
         #metric .module-three .full-image-module {
-          height: 700px;
+          height: 1230px;
           margin-bottom: 0; } }
+      @media screen and (min-width: 480px) and (max-width: 690px) {
+        #metric .module-three .full-image-module {
+          height: 650px; } }
       #metric .module-three .full-image-module p {
         max-width: 100%;
+        height: 100%;
         margin: 0 !important; }
         #metric .module-three .full-image-module p img {
           width: 100%;
-          height: auto;
+          height: 100%;
           display: block; }
     #metric .module-three .full-color-section {
       float: left;
@@ -850,7 +1097,10 @@ html {
           height: 800px; } }
       @media screen and (min-width: 320px) and (max-width: 640px) {
         #metric .module-three .full-color-section {
-          height: 700px; } }
+          height: 1230px; } }
+      @media screen and (min-width: 480px) and (max-width: 690px) {
+        #metric .module-three .full-color-section {
+          height: 650px; } }
     #metric .module-three .three-module-inside {
       position: absolute;
       opacity: 0.9;
@@ -868,6 +1118,15 @@ html {
       @media screen and (min-width: 1440px) {
         #metric .module-three .three-module-inside {
           max-width: 60%;
+          margin-left: auto;
+          margin-right: auto; }
+          #metric .module-three .three-module-inside::after {
+            clear: both;
+            content: "";
+            display: table; } }
+      @media screen and (min-width: 1024px) and (max-width: 1440px) {
+        #metric .module-three .three-module-inside {
+          max-width: 80%;
           margin-left: auto;
           margin-right: auto; }
           #metric .module-three .three-module-inside::after {
@@ -900,6 +1159,21 @@ html {
         margin-right: 0; }
         #metric .module-three .three-module-inside .indise-module-part:last-child {
           margin-right: 0; }
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+          #metric .module-three .three-module-inside .indise-module-part {
+            height: 300px; } }
+        @media screen and (min-width: 320px) and (max-width: 640px) {
+          #metric .module-three .three-module-inside .indise-module-part {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 100%;
+            height: auto; }
+            #metric .module-three .three-module-inside .indise-module-part:last-child {
+              margin-right: 0; } }
+        @media screen and (min-width: 480px) and (max-width: 690px) {
+          #metric .module-three .three-module-inside .indise-module-part {
+            height: 260px; } }
         #metric .module-three .three-module-inside .indise-module-part .subtitle-metric {
           color: #fff;
           margin-bottom: 0;
@@ -956,9 +1230,6 @@ html {
     @media screen and (min-width: 768px) and (max-width: 1023px) {
       #metric .full-color-section {
         height: 800px; } }
-    @media screen and (min-width: 320px) and (max-width: 640px) {
-      #metric .full-color-section {
-        height: 700px; } }
   #metric .full-image-section {
     float: left;
     display: block;
@@ -1018,12 +1289,17 @@ html {
     margin: 0; }
     #metric .full-metrica:last-child {
       margin-right: 0; }
+    @media screen and (min-width: 480px) and (max-width: 690px) {
+      #metric .full-metrica {
+        padding-top: 0;
+        padding-bottom: 40px; } }
     #metric .full-metrica.metrica-bg {
       background: #fbfbfb; }
     #metric .full-metrica h2 {
       font-size: 3.125em;
       color: #444;
-      margin: 0; }
+      margin: 0;
+      text-transform: uppercase; }
       @media screen and (min-width: 320px) and (max-width: 640px) {
         #metric .full-metrica h2 {
           font-size: 2.375em;
@@ -1080,6 +1356,42 @@ html {
         clear: both;
         content: "";
         display: table; }
+      @media screen and (min-width: 1024px) and (max-width: 1440px) {
+        #metric .full-metrica .module-tables {
+          max-width: 65%;
+          margin-left: auto;
+          margin-right: auto; }
+          #metric .full-metrica .module-tables::after {
+            clear: both;
+            content: "";
+            display: table; } }
+      @media screen and (min-width: 768px) and (max-width: 1023px) {
+        #metric .full-metrica .module-tables {
+          max-width: 90%;
+          margin-left: auto;
+          margin-right: auto; }
+          #metric .full-metrica .module-tables::after {
+            clear: both;
+            content: "";
+            display: table; } }
+      @media screen and (min-width: 320px) and (max-width: 640px) {
+        #metric .full-metrica .module-tables {
+          max-width: 95%;
+          margin-left: auto;
+          margin-right: auto; }
+          #metric .full-metrica .module-tables::after {
+            clear: both;
+            content: "";
+            display: table; } }
+      @media screen and (min-width: 480px) and (max-width: 690px) {
+        #metric .full-metrica .module-tables {
+          max-width: 95%;
+          margin-left: auto;
+          margin-right: auto; }
+          #metric .full-metrica .module-tables::after {
+            clear: both;
+            content: "";
+            display: table; } }
       #metric .full-metrica .module-tables .tables-img {
         float: left;
         display: block;
@@ -1087,6 +1399,19 @@ html {
         width: 27.49666%; }
         #metric .full-metrica .module-tables .tables-img:last-child {
           margin-right: 0; }
+        @media screen and (min-width: 320px) and (max-width: 640px) {
+          #metric .full-metrica .module-tables .tables-img {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 91.4702%;
+            margin: 0 auto;
+            float: none; }
+            #metric .full-metrica .module-tables .tables-img:last-child {
+              margin-right: 0; } }
+        @media screen and (min-width: 480px) and (max-width: 690px) {
+          #metric .full-metrica .module-tables .tables-img p img {
+            margin-top: 0; } }
       #metric .full-metrica .module-tables .tables-data {
         float: left;
         display: block;
@@ -1094,6 +1419,17 @@ html {
         width: 70.14568%; }
         #metric .full-metrica .module-tables .tables-data:last-child {
           margin-right: 0; }
+        @media screen and (min-width: 320px) and (max-width: 640px) {
+          #metric .full-metrica .module-tables .tables-data {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 100%; }
+            #metric .full-metrica .module-tables .tables-data:last-child {
+              margin-right: 0; } }
+        @media screen and (min-width: 480px) and (max-width: 690px) {
+          #metric .full-metrica .module-tables .tables-data p img {
+            margin-top: 0; } }
       #metric .full-metrica .module-tables p {
         max-width: 100%;
         margin-left: auto;
@@ -1110,6 +1446,42 @@ html {
         clear: both;
         content: "";
         display: table; }
+      @media screen and (min-width: 1024px) and (max-width: 1440px) {
+        #metric .full-metrica.module-newsletter .module-tables {
+          max-width: 50%;
+          margin-left: auto;
+          margin-right: auto; }
+          #metric .full-metrica.module-newsletter .module-tables::after {
+            clear: both;
+            content: "";
+            display: table; } }
+      @media screen and (min-width: 768px) and (max-width: 1023px) {
+        #metric .full-metrica.module-newsletter .module-tables {
+          max-width: 80%;
+          margin-left: auto;
+          margin-right: auto; }
+          #metric .full-metrica.module-newsletter .module-tables::after {
+            clear: both;
+            content: "";
+            display: table; } }
+      @media screen and (min-width: 320px) and (max-width: 640px) {
+        #metric .full-metrica.module-newsletter .module-tables {
+          max-width: 80%;
+          margin-left: auto;
+          margin-right: auto; }
+          #metric .full-metrica.module-newsletter .module-tables::after {
+            clear: both;
+            content: "";
+            display: table; } }
+      @media screen and (min-width: 480px) and (max-width: 690px) {
+        #metric .full-metrica.module-newsletter .module-tables {
+          max-width: 95%;
+          margin-left: auto;
+          margin-right: auto; }
+          #metric .full-metrica.module-newsletter .module-tables::after {
+            clear: both;
+            content: "";
+            display: table; } }
     #metric .full-metrica.module-redesociales .module-tables {
       max-width: 30%;
       margin-left: auto;
@@ -1118,6 +1490,42 @@ html {
         clear: both;
         content: "";
         display: table; }
+      @media screen and (min-width: 1024px) and (max-width: 1440px) {
+        #metric .full-metrica.module-redesociales .module-tables {
+          max-width: 35%;
+          margin-left: auto;
+          margin-right: auto; }
+          #metric .full-metrica.module-redesociales .module-tables::after {
+            clear: both;
+            content: "";
+            display: table; } }
+      @media screen and (min-width: 768px) and (max-width: 1023px) {
+        #metric .full-metrica.module-redesociales .module-tables {
+          max-width: 60%;
+          margin-left: auto;
+          margin-right: auto; }
+          #metric .full-metrica.module-redesociales .module-tables::after {
+            clear: both;
+            content: "";
+            display: table; } }
+      @media screen and (min-width: 320px) and (max-width: 640px) {
+        #metric .full-metrica.module-redesociales .module-tables {
+          max-width: 80%;
+          margin-left: auto;
+          margin-right: auto; }
+          #metric .full-metrica.module-redesociales .module-tables::after {
+            clear: both;
+            content: "";
+            display: table; } }
+      @media screen and (min-width: 480px) and (max-width: 690px) {
+        #metric .full-metrica.module-redesociales .module-tables {
+          max-width: 75%;
+          margin-left: auto;
+          margin-right: auto; }
+          #metric .full-metrica.module-redesociales .module-tables::after {
+            clear: both;
+            content: "";
+            display: table; } }
 
 #specs {
   float: left;
@@ -1163,27 +1571,19 @@ html {
       #specs p {
         max-width: 90%;
         margin-left: auto;
-        margin-right: auto; }
+        margin-right: auto;
+        font-size: 18px;
+        line-height: 31px; }
         #specs p::after {
           clear: both;
           content: "";
           display: table; } }
-    @media screen and (min-width: 320px) and (max-width: 640px) {
-      #specs p {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 100%;
-        font-size: 18px;
-        line-height: 31px; }
-        #specs p:last-child {
-          margin-right: 0; } }
   #specs ul {
     max-width: 50%;
     margin-left: auto;
     margin-right: auto;
     padding: 0;
-    margin: 60px auto 30px; }
+    margin: 40px auto 30px; }
     #specs ul::after {
       clear: both;
       content: "";
@@ -1220,11 +1620,14 @@ html {
         max-width: 96%;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 100px; }
+        margin-top: 40px; }
         #specs ul::after {
           clear: both;
           content: "";
           display: table; } }
+    @media screen and (min-width: 480px) and (max-width: 690px) {
+      #specs ul {
+        float: none; } }
     #specs ul li {
       list-style: none;
       font-size: 1em;
@@ -1255,6 +1658,42 @@ html {
       clear: both;
       content: "";
       display: table; }
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+      #contacto form {
+        max-width: 85%;
+        margin-left: auto;
+        margin-right: auto; }
+        #contacto form::after {
+          clear: both;
+          content: "";
+          display: table; } }
+    @media screen and (min-width: 1024px) and (max-width: 1279px) {
+      #contacto form {
+        max-width: 85%;
+        margin-left: auto;
+        margin-right: auto; }
+        #contacto form::after {
+          clear: both;
+          content: "";
+          display: table; } }
+    @media screen and (min-width: 320px) and (max-width: 640px) {
+      #contacto form {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto; }
+        #contacto form::after {
+          clear: both;
+          content: "";
+          display: table; } }
+    @media screen and (min-width: 480px) and (max-width: 690px) {
+      #contacto form {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto; }
+        #contacto form::after {
+          clear: both;
+          content: "";
+          display: table; } }
     #contacto form .form-field {
       float: left;
       display: block;
@@ -1341,31 +1780,76 @@ html {
       outline: none; }
       #contacto form .buttons button:last-child {
         margin-right: 0; }
+      @media screen and (min-width: 320px) and (max-width: 640px) {
+        #contacto form .buttons button {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 100%; }
+          #contacto form .buttons button:last-child {
+            margin-right: 0; } }
+      @media screen and (min-width: 480px) and (max-width: 690px) {
+        #contacto form .buttons button {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 48.82117%; }
+          #contacto form .buttons button:last-child {
+            margin-right: 0; } }
 
-#gracias {
+.end_mediakit_content {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 100%;
   height: 1000px;
   overflow: hidden; }
-  #gracias:last-child {
+  .end_mediakit_content:last-child {
     margin-right: 0; }
-  #gracias .end_mediakit {
+  @media screen and (min-width: 1280px) {
+    .end_mediakit_content {
+      height: 800px; } }
+  @media screen and (min-width: 1440px) {
+    .end_mediakit_content {
+      height: 1000px; } }
+  @media screen and (min-width: 1024px) and (max-width: 1279px) {
+    .end_mediakit_content {
+      height: 800px; } }
+  @media screen and (min-width: 320px) and (max-width: 640px) {
+    .end_mediakit_content {
+      height: 650px; } }
+  @media screen and (min-width: 480px) and (max-width: 690px) {
+    .end_mediakit_content {
+      height: 390px; } }
+  .end_mediakit_content .end_mediakit {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 100%;
     position: relative; }
-    #gracias .end_mediakit:last-child {
+    .end_mediakit_content .end_mediakit:last-child {
       margin-right: 0; }
-    #gracias .end_mediakit p {
-      margin: 0 !important; }
-      #gracias .end_mediakit p img {
-        width: 100%;
-        height: auto;
-        display: block; }
-  #gracias .bg-color {
+    .end_mediakit_content .end_mediakit img {
+      width: 100%;
+      display: block;
+      margin: 0 !important;
+      height: 1000px; }
+      @media screen and (min-width: 1280px) {
+        .end_mediakit_content .end_mediakit img {
+          height: 800px; } }
+      @media screen and (min-width: 1440px) {
+        .end_mediakit_content .end_mediakit img {
+          height: 1000px; } }
+      @media screen and (min-width: 1024px) and (max-width: 1279px) {
+        .end_mediakit_content .end_mediakit img {
+          height: 800px; } }
+      @media screen and (min-width: 320px) and (max-width: 640px) {
+        .end_mediakit_content .end_mediakit img {
+          height: 650px; } }
+      @media screen and (min-width: 480px) and (max-width: 690px) {
+        .end_mediakit_content .end_mediakit img {
+          height: 390px; } }
+  .end_mediakit_content .bg-color {
     float: left;
     display: block;
     margin-right: 2.35765%;
@@ -1375,9 +1859,24 @@ html {
     background: #444;
     opacity: 0.9;
     z-index: 5; }
-    #gracias .bg-color:last-child {
+    .end_mediakit_content .bg-color:last-child {
       margin-right: 0; }
-  #gracias .end_info {
+    @media screen and (min-width: 1280px) {
+      .end_mediakit_content .bg-color {
+        height: 800px; } }
+    @media screen and (min-width: 1440px) {
+      .end_mediakit_content .bg-color {
+        height: 1000px; } }
+    @media screen and (min-width: 1024px) and (max-width: 1279px) {
+      .end_mediakit_content .bg-color {
+        height: 800px; } }
+    @media screen and (min-width: 320px) and (max-width: 640px) {
+      .end_mediakit_content .bg-color {
+        height: 650px; } }
+    @media screen and (min-width: 480px) and (max-width: 690px) {
+      .end_mediakit_content .bg-color {
+        height: 390px; } }
+  .end_mediakit_content .end_info {
     text-align: center;
     float: left;
     display: block;
@@ -1387,25 +1886,58 @@ html {
     position: absolute;
     display: table;
     z-index: 10; }
-    #gracias .end_info:last-child {
+    .end_mediakit_content .end_info:last-child {
       margin-right: 0; }
-    #gracias .end_info .end_info-center {
+    @media screen and (min-width: 1280px) {
+      .end_mediakit_content .end_info {
+        height: 800px; } }
+    @media screen and (min-width: 1440px) {
+      .end_mediakit_content .end_info {
+        height: 1000px; } }
+    @media screen and (min-width: 1024px) and (max-width: 1279px) {
+      .end_mediakit_content .end_info {
+        height: 800px; } }
+    @media screen and (min-width: 320px) and (max-width: 640px) {
+      .end_mediakit_content .end_info {
+        height: 650px; } }
+    @media screen and (min-width: 480px) and (max-width: 690px) {
+      .end_mediakit_content .end_info {
+        height: 390px; } }
+    .end_mediakit_content .end_info .end_info-center {
       display: table-cell;
       vertical-align: middle; }
-      #gracias .end_info .end_info-center p {
+      .end_mediakit_content .end_info .end_info-center p {
         max-width: 25%;
         margin-left: auto;
         margin-right: auto;
         margin: 0 auto !important; }
-        #gracias .end_info .end_info-center p::after {
+        .end_mediakit_content .end_info .end_info-center p::after {
           clear: both;
           content: "";
           display: table; }
-        #gracias .end_info .end_info-center p img {
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+          .end_mediakit_content .end_info .end_info-center p {
+            max-width: 50%;
+            margin-left: auto;
+            margin-right: auto; }
+            .end_mediakit_content .end_info .end_info-center p::after {
+              clear: both;
+              content: "";
+              display: table; } }
+        @media screen and (min-width: 480px) and (max-width: 690px) {
+          .end_mediakit_content .end_info .end_info-center p {
+            max-width: 45%;
+            margin-left: auto;
+            margin-right: auto; }
+            .end_mediakit_content .end_info .end_info-center p::after {
+              clear: both;
+              content: "";
+              display: table; } }
+        .end_mediakit_content .end_info .end_info-center p img {
           width: 100%;
           height: auto;
           display: block; }
-      #gracias .end_info .end_info-center h5 {
+      .end_mediakit_content .end_info .end_info-center h5 {
         color: #fff;
         font-size: 1.875em;
         font-weight: 300;

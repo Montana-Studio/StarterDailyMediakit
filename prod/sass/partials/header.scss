@@ -21,6 +21,9 @@
 			@include outer-container(98%);
 			min-width: 90%;
 	    }
+	    @include media($mobileLand){
+			@include outer-container(90%);
+	    }
 		.logo {
 			@include span-columns(2.5);	
 			display: table-cell;
@@ -50,6 +53,9 @@
 			vertical-align: middle;
 			float: none;
 			@include media($mobileTomobileLand) {
+				display: none;
+		    }
+		    @include media($mobileLand){
 				display: none;
 		    }
 			.navigation {
@@ -85,5 +91,4 @@
 			}
 		}	
 	}
-	
 }

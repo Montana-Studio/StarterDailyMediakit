@@ -4,6 +4,18 @@
 	form {
 		@include outer-container(40%); 
 		font:{family:$font_first;}
+		@include media($tablet) {
+			@include outer-container(85%);
+		}
+		@include media($tabletLand) {
+			@include outer-container(85%);
+		}
+		@include media($mobileTomobileLand) {
+			@include outer-container(90%);
+		}
+		@include media($mobileLand) {
+			@include outer-container(90%);
+		}
 		.form-field {
 			@include span-columns(12);
 			margin:{top:30px;}
@@ -51,6 +63,12 @@
 		.buttons {
 			button {
 				@include span-columns(4);
+				@include media($mobileTomobileLand) {
+					@include span-columns(12);
+				}
+				@include media($mobileLand) {
+					@include span-columns(6);
+				}
 				color:#fff;
 				background: $first_color;
 				border:0;

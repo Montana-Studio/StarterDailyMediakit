@@ -1,17 +1,45 @@
-#gracias {
+.end_mediakit_content {
 	@include span-columns(12);
 	height: 1000px;
 	overflow: hidden;
+	@include media ($notebook) {
+		height:800px; 
+	}
+	@include media($desktop) {
+		height:1000px; 
+	}
+	@include media($tabletLand) {
+		height:800px; 
+	}
+	@include media($mobileTomobileLand) {
+		height:650px; 
+    }
+    @include media($mobileLand) {
+		height:390px; 
+    }
 	.end_mediakit {
 		@include span-columns(12);
 		position: relative;
-		p {
+		img {
+			width: 100%;
+			display: block;
 			margin: 0 !important;
-			img {
-				width: 100%;
-				height: auto;
-				display: block;
+			height: 1000px;
+			@include media ($notebook) {
+				height:800px; 
 			}
+			@include media($desktop) {
+				height:1000px; 
+			}
+			@include media($tabletLand) {
+				height:800px; 
+			}
+			@include media($mobileTomobileLand) {
+				height:650px; 
+		    }
+		    @include media($mobileLand) {
+				height:390px; 
+		    }
 		}
 	}
 	.bg-color {
@@ -21,6 +49,21 @@
 		background: $first_color;
 		opacity: 0.9;
 		z-index:5;
+		@include media ($notebook) {
+			height:800px; 
+		}
+		@include media($desktop) {
+			height:1000px; 
+		}
+		@include media($tabletLand) {
+			height:800px; 
+		}
+		@include media($mobileTomobileLand) {
+			height:650px; 
+	    }
+	    @include media($mobileLand) {
+			height:390px; 
+	    }
 	}
 	.end_info {
 		text-align: center;
@@ -29,11 +72,32 @@
 		position: absolute;
 		display: table;
 		z-index:10;
+		@include media ($notebook) {
+			height:800px; 
+		}
+		@include media($desktop) {
+			height:1000px; 
+		}
+		@include media($tabletLand) {
+			height:800px; 
+		}
+		@include media($mobileTomobileLand) {
+			height:650px; 
+	    }
+	    @include media($mobileLand) {
+			height:390px; 
+	    }
 		.end_info-center {
 			display: table-cell;
 			vertical-align: middle;
 			p {
 				@include outer-container(25%);
+				@include media($tablet) {
+					@include outer-container(50%);
+				}
+				@include media($mobileLand) {
+					@include outer-container(45%);
+			    }
 				margin:0 auto !important;
 				img {
 					width: 100%;
