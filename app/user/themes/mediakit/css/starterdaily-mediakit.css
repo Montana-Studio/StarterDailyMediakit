@@ -458,7 +458,7 @@ html {
   display: block;
   margin-right: 2.35765%;
   width: 100%;
-  padding: 100px 0;
+  padding-top: 100px;
   margin: 0; }
   #metric:last-child {
     margin-right: 0; }
@@ -543,6 +543,14 @@ html {
           display: block;
           margin-right: 2.35765%;
           width: 100%; }
+          #metric .module-one .img-metric-module:last-child {
+            margin-right: 0; } }
+      @media screen and (min-width: 1440px) {
+        #metric .module-one .img-metric-module {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 48.82117%; }
           #metric .module-one .img-metric-module:last-child {
             margin-right: 0; } }
       @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -642,6 +650,269 @@ html {
         @media screen and (min-width: 320px) and (max-width: 640px) {
           #metric .module-one .img-metric-module .imagen-full-module.module-right {
             margin-top: 40px !important; } }
+  #metric .mapa-module {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    background: #444;
+    margin: 0;
+    padding: 50px 0; }
+    #metric .mapa-module:last-child {
+      margin-right: 0; }
+    #metric .mapa-module .mapa-module-inside {
+      max-width: 90%;
+      margin-left: auto;
+      margin-right: auto; }
+      #metric .mapa-module .mapa-module-inside::after {
+        clear: both;
+        content: "";
+        display: table; }
+      @media screen and (min-width: 1440px) {
+        #metric .mapa-module .mapa-module-inside {
+          max-width: 60%;
+          margin-left: auto;
+          margin-right: auto; }
+          #metric .mapa-module .mapa-module-inside::after {
+            clear: both;
+            content: "";
+            display: table; } }
+      #metric .mapa-module .mapa-module-inside h3 {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%; }
+        #metric .mapa-module .mapa-module-inside h3:last-child {
+          margin-right: 0; }
+      #metric .mapa-module .mapa-module-inside .line-title {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        margin-bottom: 40px; }
+        #metric .mapa-module .mapa-module-inside .line-title:last-child {
+          margin-right: 0; }
+      #metric .mapa-module .mapa-module-inside p {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 30px; }
+        #metric .mapa-module .mapa-module-inside p::after {
+          clear: both;
+          content: "";
+          display: table; }
+        @media screen and (min-width: 1024px) and (max-width: 1440px) {
+          #metric .mapa-module .mapa-module-inside p {
+            max-width: 70%;
+            margin-left: auto;
+            margin-right: auto; }
+            #metric .mapa-module .mapa-module-inside p::after {
+              clear: both;
+              content: "";
+              display: table; } }
+        @media screen and (min-width: 320px) and (max-width: 640px) {
+          #metric .mapa-module .mapa-module-inside p {
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto; }
+            #metric .mapa-module .mapa-module-inside p::after {
+              clear: both;
+              content: "";
+              display: table; } }
+        #metric .mapa-module .mapa-module-inside p img {
+          width: 100%;
+          height: auto;
+          display: block; }
+  #metric .module-two {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    padding: 150px 0; }
+    #metric .module-two:last-child {
+      margin-right: 0; }
+    #metric .module-two .two-module-inside {
+      max-width: 90%;
+      margin-left: auto;
+      margin-right: auto; }
+      #metric .module-two .two-module-inside::after {
+        clear: both;
+        content: "";
+        display: table; }
+      @media screen and (min-width: 1440px) {
+        #metric .module-two .two-module-inside {
+          max-width: 60%;
+          margin-left: auto;
+          margin-right: auto; }
+          #metric .module-two .two-module-inside::after {
+            clear: both;
+            content: "";
+            display: table; } }
+      #metric .module-two .two-module-inside .line-metric {
+        margin-bottom: 40px; }
+      #metric .module-two .two-module-inside p {
+        max-width: 50%;
+        margin-left: auto;
+        margin-right: auto; }
+        #metric .module-two .two-module-inside p::after {
+          clear: both;
+          content: "";
+          display: table; }
+        @media screen and (min-width: 1440px) {
+          #metric .module-two .two-module-inside p {
+            max-width: 60%;
+            margin-left: auto;
+            margin-right: auto; }
+            #metric .module-two .two-module-inside p::after {
+              clear: both;
+              content: "";
+              display: table; } }
+        #metric .module-two .two-module-inside p img {
+          width: 100%;
+          height: auto;
+          display: block; }
+      #metric .module-two .two-module-inside.publicados p {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto; }
+        #metric .module-two .two-module-inside.publicados p::after {
+          clear: both;
+          content: "";
+          display: table; }
+    #metric .module-two.publicados-module {
+      padding-bottom: 40px; }
+  #metric .module-three {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    #metric .module-three:last-child {
+      margin-right: 0; }
+    #metric .module-three .full-image-module {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      height: 1200px;
+      overflow: hidden;
+      position: relative;
+      margin-bottom: 50px;
+      margin-right: 0; }
+      #metric .module-three .full-image-module:last-child {
+        margin-right: 0; }
+      @media screen and (min-width: 1024px) and (max-width: 1440px) {
+        #metric .module-three .full-image-module {
+          height: 900px; } }
+      @media screen and (min-width: 1280px) {
+        #metric .module-three .full-image-module {
+          height: 850px; } }
+      @media screen and (min-width: 1440px) {
+        #metric .module-three .full-image-module {
+          height: 1000px; } }
+      @media screen and (min-width: 768px) and (max-width: 1023px) {
+        #metric .module-three .full-image-module {
+          height: 800px;
+          margin-bottom: 0; } }
+      @media screen and (min-width: 320px) and (max-width: 640px) {
+        #metric .module-three .full-image-module {
+          height: 700px;
+          margin-bottom: 0; } }
+      #metric .module-three .full-image-module p {
+        max-width: 100%;
+        margin: 0 !important; }
+        #metric .module-three .full-image-module p img {
+          width: 100%;
+          height: auto;
+          display: block; }
+    #metric .module-three .full-color-section {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      position: absolute;
+      background: #444;
+      opacity: 0.9;
+      height: 1200px;
+      margin: 0; }
+      #metric .module-three .full-color-section:last-child {
+        margin-right: 0; }
+      @media screen and (min-width: 1024px) and (max-width: 1440px) {
+        #metric .module-three .full-color-section {
+          height: 900px; } }
+      @media screen and (min-width: 1280px) {
+        #metric .module-three .full-color-section {
+          height: 850px; } }
+      @media screen and (min-width: 1440px) {
+        #metric .module-three .full-color-section {
+          height: 1000px; } }
+      @media screen and (min-width: 768px) and (max-width: 1023px) {
+        #metric .module-three .full-color-section {
+          height: 800px; } }
+      @media screen and (min-width: 320px) and (max-width: 640px) {
+        #metric .module-three .full-color-section {
+          height: 700px; } }
+    #metric .module-three .three-module-inside {
+      position: absolute;
+      opacity: 0.9;
+      height: 1200px;
+      left: 0;
+      right: 0;
+      padding-top: 80px;
+      max-width: 90%;
+      margin-left: auto;
+      margin-right: auto; }
+      #metric .module-three .three-module-inside::after {
+        clear: both;
+        content: "";
+        display: table; }
+      @media screen and (min-width: 1440px) {
+        #metric .module-three .three-module-inside {
+          max-width: 60%;
+          margin-left: auto;
+          margin-right: auto; }
+          #metric .module-three .three-module-inside::after {
+            clear: both;
+            content: "";
+            display: table; } }
+      #metric .module-three .three-module-inside .line-title {
+        margin-bottom: 40px; }
+      #metric .module-three .three-module-inside p {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto; }
+        #metric .module-three .three-module-inside p::after {
+          clear: both;
+          content: "";
+          display: table; }
+        #metric .module-three .three-module-inside p img {
+          width: 100%;
+          height: 100%;
+          display: block; }
+      #metric .module-three .three-module-inside .indise-module-part {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%;
+        height: 395px;
+        margin-top: 20px;
+        margin-left: 0;
+        margin-bottom: 0;
+        margin-right: 0; }
+        #metric .module-three .three-module-inside .indise-module-part:last-child {
+          margin-right: 0; }
+        #metric .module-three .three-module-inside .indise-module-part .subtitle-metric {
+          color: #fff;
+          margin-bottom: 0;
+          font-size: 1em;
+          font-weight: 300; }
+        #metric .module-three .three-module-inside .indise-module-part .line-metric {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 95.7351%;
+          border: 1px solid #fff; }
+          #metric .module-three .three-module-inside .indise-module-part .line-metric:last-child {
+            margin-right: 0; }
   #metric .imagen-full {
     float: left;
     display: block;
@@ -651,45 +922,16 @@ html {
     margin-bottom: 60px; }
     #metric .imagen-full:last-child {
       margin-right: 0; }
-  #metric .full-image-sect2 {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
+  #metric .full-image-sect2 p {
     width: 100%;
-    height: 1200px;
-    overflow: hidden;
-    position: relative;
-    margin-bottom: 50px;
-    margin-right: 0; }
-    #metric .full-image-sect2:last-child {
-      margin-right: 0; }
-    @media screen and (min-width: 1024px) and (max-width: 1440px) {
-      #metric .full-image-sect2 {
-        height: 900px; } }
-    @media screen and (min-width: 1280px) {
-      #metric .full-image-sect2 {
-        height: 850px; } }
-    @media screen and (min-width: 1440px) {
-      #metric .full-image-sect2 {
-        height: 1000px; } }
-    @media screen and (min-width: 768px) and (max-width: 1023px) {
-      #metric .full-image-sect2 {
-        height: 800px;
-        margin-bottom: 0; } }
-    @media screen and (min-width: 320px) and (max-width: 640px) {
-      #metric .full-image-sect2 {
-        height: 700px;
-        margin-bottom: 0; } }
-    #metric .full-image-sect2 p {
+    height: 100%;
+    max-width: 100%;
+    margin: 0 !important;
+    padding: 0; }
+    #metric .full-image-sect2 p img {
       width: 100%;
       height: 100%;
-      max-width: 100%;
-      margin: 0 !important;
-      padding: 0; }
-      #metric .full-image-sect2 p img {
-        width: 100%;
-        height: 100%;
-        display: block; }
+      display: block; }
   #metric .full-color-section {
     float: left;
     display: block;
@@ -767,68 +1009,6 @@ html {
         width: 100%;
         height: auto;
         display: block; }
-  #metric .mapa-module {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 100%;
-    background: #444;
-    margin: 0; }
-    #metric .mapa-module:last-child {
-      margin-right: 0; }
-    #metric .mapa-module .mapa-module-inside {
-      max-width: 90%;
-      margin-left: auto;
-      margin-right: auto; }
-      #metric .mapa-module .mapa-module-inside::after {
-        clear: both;
-        content: "";
-        display: table; }
-      #metric .mapa-module .mapa-module-inside h3 {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 100%; }
-        #metric .mapa-module .mapa-module-inside h3:last-child {
-          margin-right: 0; }
-      #metric .mapa-module .mapa-module-inside .line-title {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 100%; }
-        #metric .mapa-module .mapa-module-inside .line-title:last-child {
-          margin-right: 0; }
-      #metric .mapa-module .mapa-module-inside p {
-        max-width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 30px; }
-        #metric .mapa-module .mapa-module-inside p::after {
-          clear: both;
-          content: "";
-          display: table; }
-        @media screen and (min-width: 1024px) and (max-width: 1440px) {
-          #metric .mapa-module .mapa-module-inside p {
-            max-width: 70%;
-            margin-left: auto;
-            margin-right: auto; }
-            #metric .mapa-module .mapa-module-inside p::after {
-              clear: both;
-              content: "";
-              display: table; } }
-        @media screen and (min-width: 320px) and (max-width: 640px) {
-          #metric .mapa-module .mapa-module-inside p {
-            max-width: 100%;
-            margin-left: auto;
-            margin-right: auto; }
-            #metric .mapa-module .mapa-module-inside p::after {
-              clear: both;
-              content: "";
-              display: table; } }
-        #metric .mapa-module .mapa-module-inside p img {
-          width: 100%;
-          height: auto;
-          display: block; }
   #metric .full-metrica {
     float: left;
     display: block;
@@ -892,6 +1072,52 @@ html {
         width: 100%;
         height: auto;
         display: block; }
+    #metric .full-metrica .module-tables {
+      max-width: 60%;
+      margin-left: auto;
+      margin-right: auto; }
+      #metric .full-metrica .module-tables::after {
+        clear: both;
+        content: "";
+        display: table; }
+      #metric .full-metrica .module-tables .tables-img {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 27.49666%; }
+        #metric .full-metrica .module-tables .tables-img:last-child {
+          margin-right: 0; }
+      #metric .full-metrica .module-tables .tables-data {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 70.14568%; }
+        #metric .full-metrica .module-tables .tables-data:last-child {
+          margin-right: 0; }
+      #metric .full-metrica .module-tables p {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto; }
+        #metric .full-metrica .module-tables p::after {
+          clear: both;
+          content: "";
+          display: table; }
+    #metric .full-metrica.module-newsletter .module-tables {
+      max-width: 45%;
+      margin-left: auto;
+      margin-right: auto; }
+      #metric .full-metrica.module-newsletter .module-tables::after {
+        clear: both;
+        content: "";
+        display: table; }
+    #metric .full-metrica.module-redesociales .module-tables {
+      max-width: 30%;
+      margin-left: auto;
+      margin-right: auto; }
+      #metric .full-metrica.module-redesociales .module-tables::after {
+        clear: both;
+        content: "";
+        display: table; }
 
 #specs {
   float: left;
@@ -1016,8 +1242,175 @@ html {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 100%; }
+  width: 100%;
+  padding: 60px 0; }
   #contacto:last-child {
     margin-right: 0; }
+  #contacto form {
+    max-width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Open Sans", sans-serif; }
+    #contacto form::after {
+      clear: both;
+      content: "";
+      display: table; }
+    #contacto form .form-field {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      margin-top: 30px; }
+      #contacto form .form-field:last-child {
+        margin-right: 0; }
+      #contacto form .form-field .form-label {
+        color: #444;
+        font-size: 0.75em;
+        font-weight: 400;
+        margin-bottom: 7px; }
+      #contacto form .form-field .form-data input {
+        color: #b8babb;
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        font-size: 0.6875em;
+        font-weight: 300;
+        border: 0;
+        border-bottom: 1px solid #eeeeef;
+        padding: 5px;
+        outline: none;
+        font-size: 0.9375em; }
+        #contacto form .form-field .form-data input:last-child {
+          margin-right: 0; }
+        #contacto form .form-field .form-data input::-webkit-input-placeholder {
+          color: #b8babb; }
+        #contacto form .form-field .form-data input::-moz-placeholder {
+          color: #b8babb; }
+        #contacto form .form-field .form-data input:-moz-placeholder {
+          color: #b8babb; }
+        #contacto form .form-field .form-data input:-ms-input-placeholder {
+          color: #b8babb; }
+      #contacto form .form-field .form-data .form-select-wrapper {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        border: 0;
+        border-bottom: 1px solid #eeeeef;
+        padding: 5px;
+        outline: none;
+        font-size: 0.9375em; }
+        #contacto form .form-field .form-data .form-select-wrapper:last-child {
+          margin-right: 0; }
+        #contacto form .form-field .form-data .form-select-wrapper select {
+          color: #b8babb;
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 100%;
+          font-size: 0.6875em;
+          font-weight: 300;
+          font-size: 0.9375em;
+          background: #fff;
+          border: 0;
+          outline: none; }
+          #contacto form .form-field .form-data .form-select-wrapper select:last-child {
+            margin-right: 0; }
+          #contacto form .form-field .form-data .form-select-wrapper select::-webkit-input-placeholder {
+            color: #b8babb; }
+          #contacto form .form-field .form-data .form-select-wrapper select::-moz-placeholder {
+            color: #b8babb; }
+          #contacto form .form-field .form-data .form-select-wrapper select:-moz-placeholder {
+            color: #b8babb; }
+          #contacto form .form-field .form-data .form-select-wrapper select:-ms-input-placeholder {
+            color: #b8babb; }
+    #contacto form .buttons button {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%;
+      color: #fff;
+      background: #444;
+      border: 0;
+      padding: 15px 60px;
+      margin-top: 40px;
+      font-size: 12;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      outline: none; }
+      #contacto form .buttons button:last-child {
+        margin-right: 0; }
+
+#gracias {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  height: 1000px;
+  overflow: hidden; }
+  #gracias:last-child {
+    margin-right: 0; }
+  #gracias .end_mediakit {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    position: relative; }
+    #gracias .end_mediakit:last-child {
+      margin-right: 0; }
+    #gracias .end_mediakit p {
+      margin: 0 !important; }
+      #gracias .end_mediakit p img {
+        width: 100%;
+        height: auto;
+        display: block; }
+  #gracias .bg-color {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    height: 1000px;
+    position: absolute;
+    background: #444;
+    opacity: 0.9;
+    z-index: 5; }
+    #gracias .bg-color:last-child {
+      margin-right: 0; }
+  #gracias .end_info {
+    text-align: center;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    height: 1000px;
+    position: absolute;
+    display: table;
+    z-index: 10; }
+    #gracias .end_info:last-child {
+      margin-right: 0; }
+    #gracias .end_info .end_info-center {
+      display: table-cell;
+      vertical-align: middle; }
+      #gracias .end_info .end_info-center p {
+        max-width: 25%;
+        margin-left: auto;
+        margin-right: auto;
+        margin: 0 auto !important; }
+        #gracias .end_info .end_info-center p::after {
+          clear: both;
+          content: "";
+          display: table; }
+        #gracias .end_info .end_info-center p img {
+          width: 100%;
+          height: auto;
+          display: block; }
+      #gracias .end_info .end_info-center h5 {
+        color: #fff;
+        font-size: 1.875em;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin: 0;
+        letter-spacing: 1px; }
 
 /*# sourceMappingURL=starterdaily-mediakit.css.map */

@@ -1,0 +1,53 @@
+#gracias {
+	@include span-columns(12);
+	height: 1000px;
+	overflow: hidden;
+	.end_mediakit {
+		@include span-columns(12);
+		position: relative;
+		p {
+			margin: 0 !important;
+			img {
+				width: 100%;
+				height: auto;
+				display: block;
+			}
+		}
+	}
+	.bg-color {
+		@include span-columns(12);
+		height: 1000px;
+		position: absolute;
+		background: $first_color;
+		opacity: 0.9;
+		z-index:5;
+	}
+	.end_info {
+		text-align: center;
+		@include span-columns(12);
+		height: 1000px;
+		position: absolute;
+		display: table;
+		z-index:10;
+		.end_info-center {
+			display: table-cell;
+			vertical-align: middle;
+			p {
+				@include outer-container(25%);
+				margin:0 auto !important;
+				img {
+					width: 100%;
+					height: auto;
+					display: block;
+				}
+			}
+			h5 {
+				color:#fff;
+				font:{size:em(30);weight:300;}
+				text:{transform:uppercase;}
+				margin:0;
+				letter-spacing: 1px;
+			}
+		}
+	}
+}

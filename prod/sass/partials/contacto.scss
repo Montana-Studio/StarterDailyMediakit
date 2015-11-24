@@ -1,3 +1,66 @@
 #contacto {
 	@include span-columns(12);
+	padding:60px 0;
+	form {
+		@include outer-container(40%); 
+		font:{family:$font_first;}
+		.form-field {
+			@include span-columns(12);
+			margin:{top:30px;}
+			.form-label {
+				color:$first_color;
+				font:{size:em(12);weight:400;} 
+				margin:{bottom: 7px;}
+			}
+			.form-data {
+				input {
+					color:$three_color;
+					@include span-columns(12);
+					font:{size:em(11);weight:300;} 
+					border:0;
+					border-bottom:1px solid #eeeeef;
+					padding: 5px;
+					outline: none;
+					font:{size: em(15)}
+					@include placeholder {
+					    color:$three_color;
+					}
+				}
+				.form-select-wrapper {
+					@include span-columns(12);
+					border:0;
+					border-bottom:1px solid #eeeeef;
+					padding: 5px;
+					outline: none;
+					font:{size: em(15)}
+					select {
+						color:$three_color;
+						@include span-columns(12);
+						font:{size:em(11);weight:300;} 
+						font:{size: em(15)}
+						background: #fff;
+						border: 0;
+						outline: none;
+						@include placeholder {
+						    color:$three_color;
+						}
+					}
+				}
+			}
+		}
+		.buttons {
+			button {
+				@include span-columns(4);
+				color:#fff;
+				background: $first_color;
+				border:0;
+				padding: 15px 60px;	
+				margin:{top:40px;}
+				font:{size:(12)}
+    			text-transform: uppercase;
+    			letter-spacing: 1px;
+    			outline: none;
+			}
+		}
+	}
 }

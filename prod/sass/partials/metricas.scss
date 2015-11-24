@@ -1,6 +1,6 @@
 #metric {
 	@include span-columns(12);
-	padding:100px 0;
+	padding:{top:100px;};
 	margin:0;
 	h2 {
 		font:{size:em(50)};
@@ -39,6 +39,9 @@
 			@include media ($notebook) {
 				@include span-columns(12);
 			}
+			@include media($desktop) {
+				@include span-columns(6);
+			}
 			@include media($tablet) {
 				@include span-columns(12);
 				margin:{bottom:0;}
@@ -49,7 +52,7 @@
 			}
 			@include media($mobileTomobileLand) {
 				@include span-columns(12);
-				margin:0;
+				margin:0; 
 			}
 			.line-metric {
 				@include span-columns(11);
@@ -99,33 +102,174 @@
 			}
 		}						
 	}
+	.mapa-module {
+		@include span-columns(12);
+		background: $first_color;
+		margin:0;
+		padding: 50px 0;
+		.mapa-module-inside {
+			@include outer-container(90%);
+			@include media($desktop) {
+				@include outer-container(60%);
+			}
+			h3 {
+				@include span-columns(12);
+			}
+			.line-title {
+				@include span-columns(12);
+				margin:{bottom: 40px;}
+			}
+			p {
+				@include outer-container(100%);
+				padding: {top:30px;}
+				@include media($tabletLandTonotebook) {
+					@include outer-container(70%);
+				}
+				@include media($mobileTomobileLand) {
+					@include outer-container(100%);
+				}
+				img {
+					width: 100%;
+					height: auto;
+					display: block;
+				}
+			}
+		}
+	}
+	.module-two {
+		@include span-columns(12);
+		padding: 150px 0;
+		.two-module-inside {
+			@include outer-container(90%);
+			@include media($desktop) {
+				@include outer-container(60%);
+			}
+			.line-metric {
+				margin:{bottom: 40px;}
+			}
+			p {
+				@include outer-container(50%);
+				@include media($desktop) {
+					@include outer-container(60%);
+				}
+				img {
+					width: 100%;
+					height: auto;
+					display: block;
+				}
+			}
+			&.publicados {
+				p {
+					@include outer-container(90%);
+				}
+			}	
+		}
+		&.publicados-module {
+			padding:{bottom:40px;}
+		}
+	}
+	.module-three {
+		@include span-columns(12);
+		.full-image-module {
+			@include span-columns(12);
+			height:1200px;
+			overflow: hidden;
+			position: relative;
+			margin:{bottom:50px;right:0;}
+			@include media($tabletLandTonotebook) {
+				height:900px; 
+			}
+			@include media ($notebook) {
+				height:850px; 
+			}
+			@include media($desktop) {
+				height:1000px; 
+			}
+			@include media($tablet) {
+				height:800px; 
+				margin:{bottom:0;}
+			}
+			@include media($mobileTomobileLand) {
+				height:700px; 
+				margin:{bottom:0;}
+			}
+			p {
+				max-width: 100%;
+				margin:0 !important;
+				img {
+					width: 100%;
+					height: auto;
+					display: block;
+				}
+			}
+		}
+		.full-color-section {
+			@include span-columns(12);
+			position: absolute;
+			background: $first_color;
+			opacity: 0.9;
+			height:1200px;
+			margin: 0;
+			@include media($tabletLandTonotebook) {
+				height:900px; 
+			}
+			@include media ($notebook) {
+				height:850px; 
+			}
+			@include media($desktop) {
+				height:1000px; 
+			}
+			@include media($tablet) {
+				height:800px; 
+			}
+			@include media($mobileTomobileLand) {
+				height:700px; 
+			}
+		}
+		.three-module-inside {
+			position: absolute;
+			opacity: 0.9;
+			height:1200px;
+			left: 0;
+    		right: 0;
+    		padding:{top:80px;}
+			@include outer-container(90%);
+			@include media($desktop) {
+				@include outer-container(60%);
+			}
+			.line-title {
+				margin:{bottom: 40px;}
+			}
+			p {
+				@include outer-container(90%);
+				img {
+					width: 100%;
+					height: 100%;
+					display: block;
+				}
+			}
+			.indise-module-part {
+				@include span-columns(6);
+				height: 395px;
+				margin:{top:20px;left:0;bottom:0;right:0;}
+				.subtitle-metric {
+					color:#fff;
+					margin:{bottom:0;}
+					font:{size:em(16);weight:300;}
+				}
+				.line-metric {
+					@include span-columns(11.5);
+					border: 1px solid #fff;
+				}
+			}
+		}
+	}
 	.imagen-full {
 		@include span-columns(12);
 		margin:{top:30px;bottom:60px;}
 	}
 	.full-image-sect2 {
-		@include span-columns(12);
-		height:1200px;
-		overflow: hidden;
-		position: relative;
-		margin:{bottom:50px;right:0;}
-		@include media($tabletLandTonotebook) {
-			height:900px; 
-		}
-		@include media ($notebook) {
-			height:850px; 
-		}
-		@include media($desktop) {
-			height:1000px; 
-		}
-		@include media($tablet) {
-			height:800px; 
-			margin:{bottom:0;}
-		}
-		@include media($mobileTomobileLand) {
-			height:700px; 
-			margin:{bottom:0;}
-		}
+		
 		p {
 			width: 100%;
 			height: 100%;
@@ -161,7 +305,7 @@
 		@include media($mobileTomobileLand) {
 			height:700px; 
 		}
-	}
+	} 
 	.full-image-section {
 		@include span-columns(12);
 		padding:100px 0;
@@ -193,35 +337,7 @@
 			}
 		}
 	}
-	.mapa-module {
-		@include span-columns(12);
-		background: $first_color;
-		margin:0;
-		.mapa-module-inside {
-			@include outer-container(90%);
-			h3 {
-				@include span-columns(12);
-			}
-			.line-title {
-				@include span-columns(12);
-			}
-			p {
-				@include outer-container(100%);
-				padding: {top:30px;}
-				@include media($tabletLandTonotebook) {
-					@include outer-container(70%);
-				}
-				@include media($mobileTomobileLand) {
-					@include outer-container(100%);
-				}
-				img {
-					width: 100%;
-					height: auto;
-					display: block;
-				}
-			}
-		}
-	}
+
 	.full-metrica {
 		@include span-columns(12);
 		padding:100px 0;
@@ -259,6 +375,29 @@
 				width: 100%;
 				height: auto;
 				display: block;
+			}
+		}
+		.module-tables {
+			@include outer-container(60%);
+			.tables-img {
+				@include span-columns(3.5);
+			}
+			.tables-data {
+				@include span-columns(8.5);
+			}
+			p {
+				@include outer-container(100%);
+				
+			}
+		}
+		&.module-newsletter {
+			.module-tables {
+				@include outer-container(45%);	
+			}
+		}
+		&.module-redesociales {
+			.module-tables {
+				@include outer-container(30%);	
 			}
 		}
 	}

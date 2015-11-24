@@ -17,30 +17,32 @@ content:
       - _specs
       - _requerimientos
       - _contacto
+      - _end
+
 form:
   name: Contacto Mediakit StarterDaily
   fields:
     - name: nombre
       label: Nombre
-      placeholder: Tu Nombre aquí
+      placeholder: Nombre
       type: text
       validate:
         required: true
     - name: empresa
       label: Empresa
-      placeholder: ¿Cual es nombre de la empresa?
+      placeholder: Empresa
       type: text
       validate:
         required: true
     - name: marca
       label: Marca
-      placeholder: Marca a cotizar
+      placeholder: Marca
       type: text
       validate:
         required: true
     - name: email
       label: Email
-      placeholder: Tu email aquí
+      placeholder: Correo Electronico
       type: text
       validate:
         rule: email
