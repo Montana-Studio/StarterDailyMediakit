@@ -228,10 +228,10 @@ class __TwigTemplate_adc057dbfb8b829c3f2473b5a4a5c57d31178d33789b0181d68a9eaa0b8
         echo "      <footer class=\"footer\">
         <div class=\"end_mediakit_content\">
             <div class=\"end_mediakit\">
-                <img src=\"";
+               <img src=\"";
         // line 69
         echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
-        echo "/images/imagen-bg.jpg\"/> 
+        echo "/images/screenshot.jpg\"/>  
             </div>
             <div class=\"bg-color\"></div>
             <div markdown=\"1\" class=\"end_info\">
@@ -360,7 +360,7 @@ class __TwigTemplate_adc057dbfb8b829c3f2473b5a4a5c57d31178d33789b0181d68a9eaa0b8
 /*       <footer class="footer">*/
 /*         <div class="end_mediakit_content">*/
 /*             <div class="end_mediakit">*/
-/*                 <img src="{{ theme_url }}/images/imagen-bg.jpg"/> */
+/*                <img src="{{ theme_url }}/images/screenshot.jpg"/>  */
 /*             </div>*/
 /*             <div class="bg-color"></div>*/
 /*             <div markdown="1" class="end_info">*/
