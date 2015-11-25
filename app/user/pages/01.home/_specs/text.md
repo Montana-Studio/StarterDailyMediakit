@@ -7,11 +7,43 @@ menu: Specs
 ##REQUERIMIENTOS TECNICOS
 Nuestra audiencia son profesionales jóvenes con potencial de transformarse en líderes de la industria.
 
-+ Piezas deben venir en formato <mark>Flash</mark> y <mark>HTML5</mark>. Se recomienda un backup en <mark>JPG</mark> o <mark>GIF</mark>
-+ Agencias puedes enviar el Tag de su propio Ad Server o solicitar el DFP de StarterDaily sin costo
-+ Piezas pueden ser <mark>JPG</mark> o <mark>GIF</mark> sin Ad Server para prevenir el Ad-Blocking
-+ No hay límite de peso para las piezas
-+ No hay límite de cantidad de piezas por Ad Unit. Excepto en Newsletter donde no hay rotación
-+ Las piezas necesariamente deben enlazar a un Landing Page. Se recomienda Responsive Design
-+ El presupuesto no incluye la producción de piezas
-+ Se entrega reporte mensual
+<div markdown="1" class="specs-medialist">
+
+<div markdown="1">
+<ul>
+<li>
+<div class="numero-specs">1</div>
+<div class="info">Piezas deben venir en formato <mark>Flash</mark> y <mark>HTML5</mark>. Se recomienda un backup en <mark>JPG</mark> o <mark>GIF</mark></div>
+</li>
+<li>
+<div class="numero-specs">2</div>
+<div class="info">Agencias puedes enviar el Tag de su propio Ad Server o solicitar el DFP de StarterDaily sin costo</div>
+</li>
+<li>
+<div class="numero-specs">3</div>
+<div class="info">Piezas pueden ser <mark>JPG</mark> o <mark>GIF</mark> sin Ad Server para prevenir el Ad-Blocking</div>
+</li>
+<li>
+<div class="numero-specs">4</div>
+<div class="info"> No hay límite de peso para las piezas</div>
+</li>
+<li>
+<div class="numero-specs">5</div>
+<div class="info">No hay límite de cantidad de piezas por Ad Unit. Excepto en Newsletter donde no hay rotación</div>
+</li>
+<li>
+<div class="numero-specs">6</div>
+<div class="info">Las piezas necesariamente deben enlazar a un Landing Page. Se recomienda Responsive Design</div>
+</li>
+<li>
+<div class="numero-specs">7</div>
+<div class="info">El presupuesto no incluye la producción de piezas</div>
+</li>
+<li>
+<div class="numero-specs">8</div>
+<div class="info">Se entrega reporte mensual</div>
+</li>
+</ul>
+</div>
+ 
+</div>

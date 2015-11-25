@@ -29,6 +29,90 @@
 			line-height: 31px;
 	    }
 	}
+	.specs-medialist {
+		@include outer-container(90%);
+		ul {
+			@include outer-container(60%);
+			
+			@include media ($notebook) {
+				@include outer-container(65%);
+			}
+			@include media($desktop) {
+				@include outer-container(60%);
+			}
+			@include media($tabletLand) {
+				@include outer-container(100%);
+			}
+			@include media($tablet) {
+				@include outer-container(100%);
+			}
+			@include media($mobileTomobileLand) {
+				@include outer-container(100%);
+			}
+			@include media($mobileLand) {
+				@include outer-container(100%);
+			}
+			li {
+				@include span-columns(12);
+				@include pad(20px);
+				margin: 0;
+				@include media($tablet) {
+					padding:20px 5px;
+				}
+				@include media($mobileTomobileLand) {
+					padding:20px 5px;
+				}
+				@include media($mobileTomobileLand) {
+					margin-top: 21px;
+				}
+				.numero-specs {
+					width: 25px;
+					height: 25px;
+					border-radius: 5px;
+					background: #353535;
+					display:inline-block;
+					position: relative;
+					padding: 2px;
+    				text-align: center;
+					.rest-specs {
+						@include span-columns(12);
+						height: 8px;
+						width: 8px;
+						background:#353535;
+						position: absolute;
+						left: 0px;
+						right: 0;
+						@include transform(rotate(45deg));
+						text-align: center;
+						margin: 0 auto !important;
+						bottom: -4px;
+					}
+				}
+				.info {
+					@include span-columns(11.5);
+					float: right;
+					display: inline-block;
+					text:{align:left;}
+					@include media ($notebook) {
+						@include span-columns(11);
+						float: right;
+					}
+					@include media($desktop) {
+						@include span-columns(11.2);
+						float: right;
+					}
+					@include media($mobileTomobileLand) {
+						@include span-columns(10.5);
+						float: right;
+					}
+					@include media($mobileLand) {
+						@include span-columns(11);
+						float: right;
+					}
+				}
+			}
+		}
+	}
 	ul {
 		@include outer-container(50%);
 		@include pad(0);

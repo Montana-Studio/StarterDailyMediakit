@@ -46,22 +46,22 @@ class __TwigTemplate_adc057dbfb8b829c3f2473b5a4a5c57d31178d33789b0181d68a9eaa0b8
     ";
         // line 29
         $this->displayBlock('header', $context, $blocks);
-        // line 58
+        // line 63
         echo "
     ";
-        // line 59
-        $this->displayBlock('body', $context, $blocks);
         // line 64
+        $this->displayBlock('body', $context, $blocks);
+        // line 69
         echo "
     ";
-        // line 65
+        // line 70
         $this->displayBlock('footer', $context, $blocks);
-        // line 81
+        // line 86
         echo "
     ";
-        // line 82
+        // line 87
         $this->displayBlock('bottom', $context, $blocks);
-        // line 90
+        // line 95
         echo "</body>
 </html>
 ";
@@ -159,23 +159,31 @@ class __TwigTemplate_adc057dbfb8b829c3f2473b5a4a5c57d31178d33789b0181d68a9eaa0b8
                 </h1>
             </div>
 
+            <div class=\"mobile-menu\"><img src=\"";
+        // line 42
+        echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
+        echo "/images/category.png\"/></div>
+            <div class=\"menu-mobile-media\">
+            
+            </div>
+
             <div id=\"navbar\">
               ";
-        // line 43
+        // line 48
         $this->displayBlock('header_extra', $context, $blocks);
-        // line 44
+        // line 49
         echo "              ";
         if ($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["config"]) ? $context["config"] : null), "plugins", array()), "langswitcher", array()), "enabled", array())) {
-            // line 45
+            // line 50
             echo "              ";
-            $this->loadTemplate("partials/langswitcher.html.twig", "partials/base.html.twig", 45)->display($context);
-            // line 46
+            $this->loadTemplate("partials/langswitcher.html.twig", "partials/base.html.twig", 50)->display($context);
+            // line 51
             echo "              ";
         }
-        // line 47
+        // line 52
         echo "              ";
         $this->displayBlock('header_navigation', $context, $blocks);
-        // line 50
+        // line 55
         echo "              <span class=\"panel-activation sb-toggle-left navbar-left menu-btn fa fa-bars\"></span>
             </div>
 
@@ -186,58 +194,58 @@ class __TwigTemplate_adc057dbfb8b829c3f2473b5a4a5c57d31178d33789b0181d68a9eaa0b8
     ";
     }
 
-    // line 43
+    // line 48
     public function block_header_extra($context, array $blocks = array())
     {
     }
 
-    // line 47
+    // line 52
     public function block_header_navigation($context, array $blocks = array())
     {
-        // line 48
+        // line 53
         echo "              ";
-        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 48)->display($context);
-        // line 49
+        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 53)->display($context);
+        // line 54
         echo "              ";
     }
 
-    // line 59
+    // line 64
     public function block_body($context, array $blocks = array())
     {
-        // line 60
+        // line 65
         echo "      <section class=\"";
         echo (isset($context["class"]) ? $context["class"] : null);
         echo "\">
           ";
-        // line 61
+        // line 66
         $this->displayBlock('content', $context, $blocks);
-        // line 62
+        // line 67
         echo "      </section>
     ";
     }
 
-    // line 61
+    // line 66
     public function block_content($context, array $blocks = array())
     {
     }
 
-    // line 65
+    // line 70
     public function block_footer($context, array $blocks = array())
     {
-        // line 66
+        // line 71
         echo "      <footer class=\"footer\">
         <div class=\"end_mediakit_content\">
             <div class=\"end_mediakit\">
                <img src=\"";
-        // line 69
+        // line 74
         echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
-        echo "/images/screenshot.jpg\"/>  
+        echo "/images/imagen-bg.jpg\"/>  
             </div>
             <div class=\"bg-color\"></div>
             <div markdown=\"1\" class=\"end_info\">
                 <div markdown=\"1\" class=\"end_info-center\">
                     <img src=\"";
-        // line 74
+        // line 79
         echo (isset($context["theme_url"]) ? $context["theme_url"] : null);
         echo "/images/logo-starterdaily-r.png\"/>
                     <h5>gracias</h5>
@@ -248,32 +256,32 @@ class __TwigTemplate_adc057dbfb8b829c3f2473b5a4a5c57d31178d33789b0181d68a9eaa0b8
     ";
     }
 
-    // line 82
+    // line 87
     public function block_bottom($context, array $blocks = array())
     {
-        // line 83
+        // line 88
         echo "      ";
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 88
+        // line 93
         echo "      ";
         echo $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "js", array(), "method");
         echo "
     ";
     }
 
-    // line 83
+    // line 88
     public function block_javascripts($context, array $blocks = array())
     {
-        // line 84
+        // line 89
         echo "          ";
         $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "jquery", 1 => 101), "method");
-        // line 85
+        // line 90
         echo "          ";
         $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/modernizr.custom.71422.js", 1 => 100), "method");
-        // line 86
+        // line 91
         echo "          ";
         $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/starterdaily-mediakit.min.js", 1 => 99), "method");
-        // line 87
+        // line 92
         echo "      ";
     }
 
@@ -289,7 +297,7 @@ class __TwigTemplate_adc057dbfb8b829c3f2473b5a4a5c57d31178d33789b0181d68a9eaa0b8
 
     public function getDebugInfo()
     {
-        return array (  277 => 87,  274 => 86,  271 => 85,  268 => 84,  265 => 83,  258 => 88,  255 => 83,  252 => 82,  241 => 74,  233 => 69,  228 => 66,  225 => 65,  220 => 61,  215 => 62,  213 => 61,  208 => 60,  205 => 59,  201 => 49,  198 => 48,  195 => 47,  190 => 43,  179 => 50,  176 => 47,  173 => 46,  170 => 45,  167 => 44,  165 => 43,  156 => 37,  152 => 36,  144 => 30,  141 => 29,  137 => 23,  134 => 22,  131 => 21,  128 => 20,  125 => 19,  122 => 18,  119 => 17,  117 => 16,  114 => 15,  111 => 14,  108 => 13,  105 => 12,  97 => 24,  95 => 12,  90 => 10,  85 => 9,  83 => 8,  74 => 7,  71 => 6,  65 => 90,  63 => 82,  60 => 81,  58 => 65,  55 => 64,  53 => 59,  50 => 58,  48 => 29,  44 => 28,  41 => 27,  39 => 6,  36 => 5,  34 => 4,  29 => 1,);
+        return array (  285 => 92,  282 => 91,  279 => 90,  276 => 89,  273 => 88,  266 => 93,  263 => 88,  260 => 87,  249 => 79,  241 => 74,  236 => 71,  233 => 70,  228 => 66,  223 => 67,  221 => 66,  216 => 65,  213 => 64,  209 => 54,  206 => 53,  203 => 52,  198 => 48,  187 => 55,  184 => 52,  181 => 51,  178 => 50,  175 => 49,  173 => 48,  164 => 42,  156 => 37,  152 => 36,  144 => 30,  141 => 29,  137 => 23,  134 => 22,  131 => 21,  128 => 20,  125 => 19,  122 => 18,  119 => 17,  117 => 16,  114 => 15,  111 => 14,  108 => 13,  105 => 12,  97 => 24,  95 => 12,  90 => 10,  85 => 9,  83 => 8,  74 => 7,  71 => 6,  65 => 95,  63 => 87,  60 => 86,  58 => 70,  55 => 69,  53 => 64,  50 => 63,  48 => 29,  44 => 28,  41 => 27,  39 => 6,  36 => 5,  34 => 4,  29 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -333,6 +341,11 @@ class __TwigTemplate_adc057dbfb8b829c3f2473b5a4a5c57d31178d33789b0181d68a9eaa0b8
 /*                 </h1>*/
 /*             </div>*/
 /* */
+/*             <div class="mobile-menu"><img src="{{ theme_url }}/images/category.png"/></div>*/
+/*             <div class="menu-mobile-media">*/
+/*             */
+/*             </div>*/
+/* */
 /*             <div id="navbar">*/
 /*               {% block header_extra %}{% endblock %}*/
 /*               {% if config.plugins.langswitcher.enabled %}*/
@@ -360,7 +373,7 @@ class __TwigTemplate_adc057dbfb8b829c3f2473b5a4a5c57d31178d33789b0181d68a9eaa0b8
 /*       <footer class="footer">*/
 /*         <div class="end_mediakit_content">*/
 /*             <div class="end_mediakit">*/
-/*                <img src="{{ theme_url }}/images/screenshot.jpg"/>  */
+/*                <img src="{{ theme_url }}/images/imagen-bg.jpg"/>  */
 /*             </div>*/
 /*             <div class="bg-color"></div>*/
 /*             <div markdown="1" class="end_info">*/
