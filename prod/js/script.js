@@ -18,7 +18,9 @@ $( document ).ready(function() {
 		$('#navbar').removeClass( 'show-menu-inside');
 	});
 
-	 $('.numero-specs').append('<div class="rest-specs"><div>');
+	$('.numero-specs').append('<div class="rest-specs"><div>');
+
+	$('#contacto').prepend('<h2>Contacto</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at dolor vel sapien sodales sagittis. Nunc congue est eu imperdiet suscipit.</p>');
 
 });  
  

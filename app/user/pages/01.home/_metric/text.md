@@ -12,13 +12,13 @@ tempus nisl vulputate. Maecenas mattis dictum tortor ut iaculis. Duis pulvinar e
 <div markdown="1" class="img-metric-module"> 
 ###Hendrerit porttitor diam porttitor{.title-metric}
 <div class="line-metric"></div>
-![](metrica_flujo.gif)
+![](metrica_pageviews.jpg)
 </div>
 
 <div markdown="1" class="img-metric-module img-module-right">
 ###Hendrerit porttitor diam porttitor{.title-metric}
 <div class="line-metric"></div>
-![](metrica_segmentacion.gif)
+![](metrica_usuarios.jpg)
 </div>
 
 </div>
@@ -27,7 +27,12 @@ tempus nisl vulputate. Maecenas mattis dictum tortor ut iaculis. Duis pulvinar e
 <div markdown="1" class="mapa-module-inside">
 ###Hendrerit porttitor diam porttitor{.title-metric}
 <div class="line-metric"></div>
-![](metrica_mapa.png)
+<div markdown="1" class="imagen-mapa-desktop">
+![](metrica_mapa_all.png)
+</div>
+<div markdown="1" class="imagen-mapa-mobile">
+![](metrica_mapa_mobile.png)
+</div>
 </div>
 </div>
 

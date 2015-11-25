@@ -17,12 +17,12 @@
 		@include media($tablet) {
 			@include outer-container(95%);
 		}
-		@include media($mobileTomobileLand) {
-			@include outer-container(98%);
-			min-width: 90%;
-	    }
-	    @include media($mobileLand){
+	    @include media($mobileLand) {
 			@include outer-container(95%);
+	    }
+	    @include media($mobileTomobileLand) {
+			@include outer-container(100%);
+			min-width: 95%;
 	    }
 		.logo {
 			@include span-columns(2.5);	
@@ -30,7 +30,7 @@
 			vertical-align: middle;
 			float: none;
 			@include media($mobileTomobileLand) {
-				@include span-columns(7);	
+				@include span-columns(6);	
 		    }
 			h1 {
 				margin:0;

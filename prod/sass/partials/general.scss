@@ -25,6 +25,9 @@ html {
 	@include span-columns(12);
 	margin:{top:5px;}
 	border:1px solid $second_color;
+	@include media($mobileTomobileLand) {
+		margin:{top:0;}
+    }
 }
 
 .show-menu {

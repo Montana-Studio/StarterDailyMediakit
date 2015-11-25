@@ -5,6 +5,9 @@
 	@include media($mobileLand) {
 		padding:{top:50px;};
 	}
+	@include media($mobileTomobileLand) {
+		padding:{top:70px;};
+    }
 	h2 {
 		font:{size:em(50)};
 		color:$first_color;
@@ -45,6 +48,7 @@
 		}
 		@include media($mobileTomobileLand) {
 			@include outer-container(90%);
+			margin:{bottom:30px;}
 		}
 		@include media($mobileLand) {
 			@include outer-container(90%);
@@ -52,9 +56,6 @@
 		.img-metric-module {
 			@include span-columns(5.8);
 			margin:{top:50px;left:0;bottom:140px;right:20px !important;}
-			@include media ($notebook) {
-				@include span-columns(12);
-			}
 			@include media ($notebook) {
 				@include span-columns(5.8);
 			}
@@ -78,12 +79,13 @@
 			}
 			.line-metric {
 				@include span-columns(12);
-			}
+			}	
 			p {
 				@include span-columns(12);
 				margin:{top:40px !important;}
 				@include media($desktop) {
-					@include span-columns(11);
+					@include span-columns(11.5);
+					max-width: 90%;
 				}
 				@include media($tablet) {
 					max-width: 90%;
@@ -159,6 +161,35 @@
 			.line-metric {
 				@include span-columns(12);
 				margin:{bottom: 40px;}
+			}
+			.imagen-mapa-desktop {
+				@include span-columns(12);
+				margin:{top:40px !important;}
+				@include media($desktop) {
+					max-width: 100%;
+				}
+				@include media($tablet) {
+					max-width: 90%;
+				}
+				@include media($tabletLand) {
+					max-width: 90%;
+				}
+				@include media($mobileTomobileLand) {
+					display: none;
+				}
+				@include media($mobileLand) {
+					display: none;
+				}
+			}
+			.imagen-mapa-mobile {
+				max-width: 100%;
+				display: none;
+				@include media($mobileTomobileLand) {
+					display: block;
+				}
+				@include media($mobileLand) {
+					display:block;
+				}
 			}
 			p {
 				@include outer-container(100%);
@@ -426,6 +457,9 @@
 		margin:0;
 		@include media($mobileLand) {
 			padding:{top:0;bottom:40px;}
+	    }
+	    @include media($mobileTomobileLand) {
+			padding:{top:70px;};
 	    }
 		&.metrica-bg {
 			background: #fbfbfb;

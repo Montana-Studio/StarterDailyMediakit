@@ -21,7 +21,7 @@ html {
 .text-left {
   text-align: left; }
 
-.text-center, #metric h2, #metric p, #metric .full-image-section p, #metric .full-metrica h2, #metric .full-metrica p, #specs h2, #specs p {
+.text-center, #metric h2, #metric p, #metric .full-image-section p, #metric .full-metrica h2, #metric .full-metrica p, #specs h2, #specs p, #contacto h2, #contacto p {
   text-align: center; }
 
 .text-right, #header .content-menu #navbar {
@@ -41,6 +41,9 @@ html {
   border: 1px solid #f26532; }
   .line-metric:last-child {
     margin-right: 0; }
+  @media screen and (min-width: 320px) and (max-width: 640px) {
+    .line-metric {
+      margin-top: 0; } }
 
 .show-menu {
   display: block !important; }
@@ -90,21 +93,21 @@ html {
           clear: both;
           content: "";
           display: table; } }
-    @media screen and (min-width: 320px) and (max-width: 640px) {
-      #header .content-menu {
-        max-width: 98%;
-        margin-left: auto;
-        margin-right: auto;
-        min-width: 90%; }
-        #header .content-menu::after {
-          clear: both;
-          content: "";
-          display: table; } }
     @media screen and (min-width: 480px) and (max-width: 690px) {
       #header .content-menu {
         max-width: 95%;
         margin-left: auto;
         margin-right: auto; }
+        #header .content-menu::after {
+          clear: both;
+          content: "";
+          display: table; } }
+    @media screen and (min-width: 320px) and (max-width: 640px) {
+      #header .content-menu {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 95%; }
         #header .content-menu::after {
           clear: both;
           content: "";
@@ -124,7 +127,7 @@ html {
           float: left;
           display: block;
           margin-right: 2.35765%;
-          width: 57.35098%; }
+          width: 48.82117%; }
           #header .content-menu .logo:last-child {
             margin-right: 0; } }
       #header .content-menu .logo h1 {
@@ -289,6 +292,9 @@ html {
   @media screen and (min-width: 768px) and (max-width: 1023px) {
     #inicio {
       height: 1024px; } }
+  @media screen and (min-width: 320px) and (max-width: 640px) {
+    #inicio {
+      height: 650px; } }
   @media screen and (min-width: 480px) and (max-width: 690px) {
     #inicio {
       height: 390px; } }
@@ -469,7 +475,7 @@ html {
         width: 100%;
         position: relative;
         height: initial;
-        padding: 90px 20px; }
+        padding: 70px 20px; }
         #content .content-info:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 480px) and (max-width: 690px) {
@@ -657,6 +663,9 @@ html {
   @media screen and (min-width: 480px) and (max-width: 690px) {
     #metric {
       padding-top: 50px; } }
+  @media screen and (min-width: 320px) and (max-width: 640px) {
+    #metric {
+      padding-top: 70px; } }
   #metric h2 {
     font-size: 3.125em;
     color: #444;
@@ -744,7 +753,8 @@ html {
       #metric .module-one {
         max-width: 90%;
         margin-left: auto;
-        margin-right: auto; }
+        margin-right: auto;
+        margin-bottom: 30px; }
         #metric .module-one::after {
           clear: both;
           content: "";
@@ -769,14 +779,6 @@ html {
       margin-right: 20px !important; }
       #metric .module-one .img-metric-module:last-child {
         margin-right: 0; }
-      @media screen and (min-width: 1280px) {
-        #metric .module-one .img-metric-module {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 100%; }
-          #metric .module-one .img-metric-module:last-child {
-            margin-right: 0; } }
       @media screen and (min-width: 1280px) {
         #metric .module-one .img-metric-module {
           float: left;
@@ -843,7 +845,8 @@ html {
             float: left;
             display: block;
             margin-right: 2.35765%;
-            width: 91.4702%; }
+            width: 95.7351%;
+            max-width: 90%; }
             #metric .module-one .img-metric-module p:last-child {
               margin-right: 0; } }
         @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -971,6 +974,38 @@ html {
         margin-bottom: 40px; }
         #metric .mapa-module .mapa-module-inside .line-metric:last-child {
           margin-right: 0; }
+      #metric .mapa-module .mapa-module-inside .imagen-mapa-desktop {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        margin-top: 40px !important; }
+        #metric .mapa-module .mapa-module-inside .imagen-mapa-desktop:last-child {
+          margin-right: 0; }
+        @media screen and (min-width: 1440px) {
+          #metric .mapa-module .mapa-module-inside .imagen-mapa-desktop {
+            max-width: 100%; } }
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+          #metric .mapa-module .mapa-module-inside .imagen-mapa-desktop {
+            max-width: 90%; } }
+        @media screen and (min-width: 1024px) and (max-width: 1279px) {
+          #metric .mapa-module .mapa-module-inside .imagen-mapa-desktop {
+            max-width: 90%; } }
+        @media screen and (min-width: 320px) and (max-width: 640px) {
+          #metric .mapa-module .mapa-module-inside .imagen-mapa-desktop {
+            display: none; } }
+        @media screen and (min-width: 480px) and (max-width: 690px) {
+          #metric .mapa-module .mapa-module-inside .imagen-mapa-desktop {
+            display: none; } }
+      #metric .mapa-module .mapa-module-inside .imagen-mapa-mobile {
+        max-width: 100%;
+        display: none; }
+        @media screen and (min-width: 320px) and (max-width: 640px) {
+          #metric .mapa-module .mapa-module-inside .imagen-mapa-mobile {
+            display: block; } }
+        @media screen and (min-width: 480px) and (max-width: 690px) {
+          #metric .mapa-module .mapa-module-inside .imagen-mapa-mobile {
+            display: block; } }
       #metric .mapa-module .mapa-module-inside p {
         max-width: 100%;
         margin-left: auto;
@@ -1371,6 +1406,9 @@ html {
       #metric .full-metrica {
         padding-top: 0;
         padding-bottom: 40px; } }
+    @media screen and (min-width: 320px) and (max-width: 640px) {
+      #metric .full-metrica {
+        padding-top: 70px; } }
     #metric .full-metrica.metrica-bg {
       background: #fbfbfb; }
     #metric .full-metrica h2 {
@@ -1616,6 +1654,9 @@ html {
   margin: 0; }
   #specs:last-child {
     margin-right: 0; }
+  @media screen and (min-width: 320px) and (max-width: 640px) {
+    #specs {
+      padding-top: 70px; } }
   #specs h2 {
     font-size: 3.125em;
     margin: 0;
@@ -1743,7 +1784,8 @@ html {
             padding: 20px 5px; } }
         @media screen and (min-width: 320px) and (max-width: 640px) {
           #specs .specs-medialist ul li {
-            margin-top: 21px; } }
+            margin-top: 10px;
+            padding: 10px 2px; } }
         #specs .specs-medialist ul li .numero-specs {
           width: 25px;
           height: 25px;
@@ -1888,9 +1930,52 @@ html {
   display: block;
   margin-right: 2.35765%;
   width: 100%;
-  padding: 60px 0; }
+  padding: 100px 0; }
   #contacto:last-child {
     margin-right: 0; }
+  @media screen and (min-width: 320px) and (max-width: 640px) {
+    #contacto {
+      padding-top: 70px; } }
+  #contacto h2 {
+    font-size: 3.125em;
+    margin: 0;
+    text-transform: uppercase; }
+    @media screen and (min-width: 320px) and (max-width: 640px) {
+      #contacto h2 {
+        font-size: 2.375em;
+        line-height: 38px; } }
+  #contacto p {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px !important;
+    font-size: 1.25em;
+    font-weight: 300;
+    line-height: 39px; }
+    #contacto p::after {
+      clear: both;
+      content: "";
+      display: table; }
+    @media screen and (min-width: 480px) and (max-width: 1024px) {
+      #contacto p {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto; }
+        #contacto p::after {
+          clear: both;
+          content: "";
+          display: table; } }
+    @media screen and (min-width: 320px) and (max-width: 640px) {
+      #contacto p {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 18px;
+        line-height: 31px; }
+        #contacto p::after {
+          clear: both;
+          content: "";
+          display: table; } }
   #contacto form {
     max-width: 40%;
     margin-left: auto;
