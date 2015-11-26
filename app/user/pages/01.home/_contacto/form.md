@@ -1,6 +1,6 @@
 ---
 title: Contacto
-published: true
+published: false
 body_classes: mk-contacto
 menu: Contacto
 process:
